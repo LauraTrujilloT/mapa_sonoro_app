@@ -7,7 +7,7 @@ from components.table import make_dash_table
 
 controls = dbc.Card(
     [
-        dbc.FormGroup(
+        dbc.Card(
             [
                 dbc.Label("X variable"),
                 dcc.Dropdown(
@@ -19,7 +19,7 @@ controls = dbc.Card(
                 ),
             ]
         ),
-        dbc.FormGroup(
+        dbc.Card(
             [
                 dbc.Label("Y variable"),
                 dcc.Dropdown(
@@ -31,7 +31,7 @@ controls = dbc.Card(
                 ),
             ]
         ),
-        dbc.FormGroup(
+        dbc.Card(
             [
                 dbc.Label("Cluster count"),
                 dbc.Input(id="cluster-count", type="number", value=3),

@@ -5,7 +5,7 @@ import dash_bootstrap_components as dbc
 
 controls = dbc.Card(
     [
-        dbc.FormGroup(
+        dbc.Card(
             [
                 dbc.Label("Sample"),
                 dcc.Dropdown(
@@ -17,7 +17,7 @@ controls = dbc.Card(
                 ),
             ]
         ),
-        dbc.FormGroup(
+        dbc.Card(
             [
                 dbc.Label("Y variable"),
                 dcc.Dropdown(
