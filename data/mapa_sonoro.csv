@@ -1,0 +1,586 @@
+nombre_lengua,descripcion_lengua,departamento,familia_linguistica,n_habitantes,n_hablantes,vitalidad,pais
+Cubeo,"""El pueblo indígena Cubeo se ubica en los departamentos del Amazonas, el Vaupés y el Vichada. Concentran sus viviendas alrededor de los ríos Vaupés, Querari y
+Cunduyari. El resguardo con mayor presencia Cubeo es el Parte Oriental del Vaupés, otros viven en el Guaviare, Guainía y en el Brasil. Su nombre proviene de una
+adaptación europea de la palabra tukano kebewa que significa """"la gente que no es""",Vaupés,Tukano,6984.0,4210,Vulnerable,Colombia
+Cuiba,"""Los kuiba, se ubican en el extremo oriental del departamento de Casanare, ocupando las áreas de bosques de galería y las orillas de los ríos. Comparten su
+territorio con otras comunidades de los resguardos de Caño Mochuelo y La Pascua. Viven también comunidades kuiba en el Parque El Tuparro en el
+departamento del Vichada.""
+",Casanare,Aislada,769.0,621,En peligro de extinción,Colombia
+Yuhup,NA,Vaupés,Maku,150.0,0,En peligro,Colombia
+Siriano,"""Están localizados en el Departamento del Vaupés, río Paca -afluente del Papurí- y sus afluentes los caños Wiba y Viña. De manera aislada se encuentra
+a los siriano en los caños Abiyú, su antiguo territorio tradicional y sobre el río Vaupés en el caño Hierba, Bocas del Yi y el caño Ti. También habitan en el
+Brasil y en la ciudad de Mitú. Su territorio está comprendido en el Resguardo Parte Oriental del Vaupés que tiene 3.354.097 hectáreas.""
+",Vaupés,Tukano,749.0,0,En peligro,Colombia
+Achagua,"""El pueblo indígena Achagua fue uno de los pueblos indígenas más numerosos de la Orinoquía Colombiana hasta antes de la conquista. Hoy solo quedan reductossociales en jurisdicción del municipio de Puerto López, Meta, especialmente en los resguardos de """"La Victoria o Umapo"""" y """"Turpial"""", este último compartido conindígenas Piapoko. Los Achagua reducidos actualmente en población, habitan las afluentes y aéreas intermedias de los ríos Meta, Casanare y Ariporo. Este pueblotambién tiene asentamientos en los departamentos de Vichada y Casanare, así como en los LLanos de Apure de Venezuela.""",Meta,Arawak,796.0,514,En peligro de extinción,Colombia
+Waunana,"""El Censo DANE 2005 reportó 9.066 personas que se reconocen como pertenecientes al pueblo Waunaan, de las cuales el 50,3% son hombres (4.563 personas)
+y el 49,7% mujeres (4.503 personas).
+El pueblo Waunaan se concentra en el departamento de Chocó, donde habita el 84,1% de la población. Le sigue Valle del Cauca con el 15,3% (1.390 personas)
+y Bogotá con el 0,3% (27 personas). Estos dos departamentos y la capital concentran el 99,8% poblacional de este pueblo. Los Waunan representan el 0,7% de
+la población indígena de Colombia (Ver Tabla No. 1).
+La población Waunaan que habita en zonas urbanas corresponde al 2,3% (211 personas), cifra inferior al promedio nacional de población indígena urbana que
+es del 21,43% (298.499 personas) (Ver Mapa y Tabla 1).""
+",Chocó,Chocó,9066.0,8001,Vulnerable,Colombia
+Embera chami,"""Los embera chamí son uno de los pueblos embera colombianos . Existe la diferenciación de los embera en chamí, katío y siapidara.
+Dentro de los embera también existen las denominaciones de dóbida, óibida y eyadiba, las cuales responden más a las zonas en las que se localizan
+los diferentes grupos embera, dobida (hombres de río), los óibida (hombres de selva), y los eyadiba (hombres de montaña). Entre los dodiba y los
+eyabida se pueden entender claramente entre ellos, ya que las diferencias en su habla son sutiles, son similares a las que existen entre un paisa de
+Medellín y un paisa de Manizales .
+Pasa lo mismo en la clasificación de los embera chamí, katio y siapidara. Lo que para algunos autores son diferencias, para otros son más bien
+similitudes, tal es el caso del profesor Rito Llerena, que establece una diferenciación por isoglosas que es bastante precisa.
+Los resultados de las investigaciones sobre los embera chamí, embera katío, embera dódiba, eperara siapidara establecen que todos compartieron
+una historia común y por ende características semejantes.""
+",Chocó,Chocó,29094.0,11923,Vulnerable,Colombia
+Guayabero,"""El pueblo indígena conocido como Guayabero , se autoreconoce como Jiw, es el pueblo con mayor número de habitantes indígenas del departamento del
+Guaviare. También están localizados en el departamento del Meta. Los Jiw hablan la lengua Mitua, comparten con los pueblos Sikuani, Kuiva y
+Macaguane, de la familia lingüística Guahibo y diversas prácticas culturales.
+Uno de los rasgos culturales característicos de este pueblo es su estructura comunitaria, en la cual el parentesco constituye su principio de identidad. La
+población Jiw se halla repartida en varias comunidades y cada una de éstas se subdivide en clanes autónomos, con una particularidad, todos los
+miembros de los clanes son parientes entre sí.""
+",Guaviare,Guahibo,617.0,354,En peligro de extinción,Colombia
+Wiwa,"""El pueblo Wiwa es uno de los pueblos indígenas de la Sierra Nevada de Santa Marta. Con los otros tres pueblos mantiene lazos interétnicos de
+solidaridad mutua. A pesar de que el Censo (DANE, 2005) identificó a este grupo indígena como pueblo Arzario, ellos se autoreconocen como wiwas.
+El pueblo Wiwa habita los municipios de Dibulla, Riohacha y San Juan del Cesar en la Guajira, y Valledupar y Becerril en el departamento del Cesar
+(Suárez, 2008), y su lengua nativa es la Damana, perteneciente a la familia lingüística Chibcha.""
+",Magdalena,Chibcha,10703.0,6971,En peligro,Colombia
+Tukano,"""Los Tukano habitan en Colombia y Brasil. En Colombia habitan en el Vaupés y en Guaviare, en el río Paca y en las cabeceras del Papurí, en la región de
+Uacaricuara, en territorios ancestrales. Comparten muchas de sus costumbres y creencias con los Desano.Los Tukano se encuentran en mayor concentración en el
+Gran Resguardo Oriental del Vaupés limitado al Norte con Guainía separado por el río Isana; al sur con el Amazonas y el río Papurí, río Yavaraté, río Melofranco; al
+oriente con Brasil y Bocas del Querarí y al Occidente con el departamento del Guaviare y el departamento de Caquetá.
+Los dahséa mahsá comparten gran parte de sus costumbres y creencias con el pueblo Desano. Su principal elemento cosmogónico es la energía transmitida por el
+padre Sol y es primordial la conservación del equilibrio ecológico que se da en la relación hombre -naturaleza. Se denominan así mismos que significa """"la gente
+tukan"""".""
+",Vaupés,Tukano,2016.0,1460,Vulnerable,Colombia
+Tuyuca,"""Se localizan en los ríos Tiquié, caño Inambú y alto Papurí, frontera con el Brasil. Su territorio está comprendido en el Resguardo Parte Oriental del
+Vaupés que tiene una extensión de 3.354.097 hectáreas. Hacen parte del llamado complejo cultural de Vaupés, cuyos grupos comparten formas de
+explotación de recursos, relatos míticos, sistemas de organización social y otros elementos de su cosmovisión.""
+",Vaupés,Tukano,642.0,0,En peligro,Colombia
+Chimila,"""Los ette ennaka son un pueblo indígena habitante de la costa Caribe colombiana, que se caracterizó históricamente por su persistente resistencia guerrera a la
+colonización española y un posterior proceso de auto-invisibilización que usaron como estrategia de sobrevivencia a través de los años. En las últimas décadas,
+ante un contexto más favorable para su pervivencia física y cultural, reaparecieron abiertamente como pueblo indígena con unos usos y costumbres bien
+diferenciados.""
+",Magdalena,Chibcha,1614.0,1035,En peligro de extinción,Colombia
+Sáliba,"""Los sálibas tienen su origen en Venezuela, y se encuentran dispersos en 9 resguardos en los departamentos de Meta, Arauca y Casanare, con una población
+aproximada de 1.342 indígenas. Sus relaciones con otros grupos son conflictivas, debido a que se consideran """"menos indios"""" que los guahibos, por ejemplo, y al
+hecho de poseer una lengua no coompartida, usada como lengua franca desde la llegada de los españoles. Recibieron una marcada influencia del Instituto
+Lingüístico de Verano, lo que los hizo sentirse superiores a sus pares indígenas de otros grupos.""
+",Casanare,Saliba,3035.0,537,En peligro de extinción,Colombia
+Desano,"""La mayor concentración de la población Desana se encuentra en el departamento de Vaupés en el caño Abiyú, caño Macú Paraná y en Piracuara (caño Viarí), también hay alguno desana por el río Vaupés. Los resguardos indígenas en donde tienen sus territorios comprenden principalmente en el departamento de Vaupés el Gran Resguardo del Vaupés y en el Resguardo """"Arará-Bacatí"""" (Cararú) conformado en 1993 por Desanos, Cubeo y Tukano. En Guainía, los resguardos: """"El venado"""" en Inírida con resolución de creación No.027 del 30 de abril de 1986 y que también habitan las etnias Kurripaco, Wanano, Cubeo, Tukano y Piratapuyo. Y en
+Guaviare, los resguardos """"Lagos el dorado, lagos del paso y el remanso"""" con Res.076 del 14 de abril de 1993 y que comparten con indígenas Tukano, Cubeo, Piratapuyo y Wanano; """"Puerto viejo y Puerto Esperanza"""" (Miraflores) con Res.047 del 30 de noviembre de 1998 compartido con Cubeo, Tuyuca, Sirano, Wanano y
+Piratapuyo; """"El Itilla"""" (Calamar) , """"El Refugio"""" (San José del Guaviare), """"La Palma"""" y """"Asunción"""" (El Retorno). El territorio ancestral son las Cataratas del Yuruparí­ y
+del Uaracapurí. El Cuduiarí y el Ancho Vaupés que se unen al rió Negro antes de la desembocadura del Amazonas son ríos considerados como ancestrales. El lugar
+donde se encuentran asentados actualmente ha sido el territorio que sus ancestros designaron al pueblo Desano.""
+",Vaupés,Tukano,2179.0,1080,En peligro,Colombia
+Embera dobida,"""Los embera dódiba son uno de los pueblos embera colombianos , concentrados principalmente en el río Chocó. Existe la diferenciación de los embera
+en chamí, katío y siapidara, y también existen las denominaciones de dobida, óibida y eyadiba. Todas desde el punto de vista lingüístico implican
+variaciones dialectales.
+Los embera dobida (hombres de río) se diferencia del los óibida (hombres de selva), y de los de la zona conocida como eyadiba (hombres de montaña).
+Entre los dodiba y los eyabida se pueden entender claramente entre ellos, ya que las diferencias en su habla son sutiles, son similares a las que existen
+entre un paisa de Medellín y un paisa de Manizales .""
+",Chocó,Chocó,37327.0,23465,Vulnerable,Colombia
+Tikuna,"""Los Tikuna también denominados Tucana o Ticuna, son un pueblo indígena ubicado en el sur del Amazonas y provenientes del río Eware afluente del Amazonas en el Brasil. Su
+nombre es de origen Tupí por ser hombres que se pintaban de negro. Vivian en a lo largo del río Atacurí, Loreto-Yacú y Marinacu, y según su cosmovisión antes de ser hombres
+fueron peces hasta que su padre Yoi los sacó de las aguas.
+Están ubicados en la parte superior del río del Amazonas se extienden desde la desembocadura del río Atacuari entre Colombia y Perú hasta el río Jutaí en el Brasil. En Colombia
+ocupan todo el trapecio Amazónico, en Leticia, sobre las riberas de algunos tributarios del Amazonas, en el corregimiento de Tarapacá siendo el 27% del total de los Tikuna, que se
+ubican en territorios de Brasil, Perú y Colombia.""
+",Amazonas,Aislada,7879.0,4065,En peligro,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",N. santander,Romaní,4858.0,4220,Vulnerable,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",Santander,Romaní,4858.0,4220,Vulnerable,Colombia
+Yucuna,"""Comparten su territorio con otros grupos en los resguardos Comefayú y Mirití-Paraná al sur de la Amazonia. La mayoría de la población vive junto a los matapí
+en las riberas del río Mirití-Paraná. Otros se asientan en el río Caquetá, en La Pedrera, Comeyafú, Puerto Córdoba y Villa Azul.""
+",Amazonas,Arawak,396.0,188,En peligro,Colombia
+Makuna,"""Su representación como gente agua está se explica porque vienen del Manaitara, un raudal en el río Apaporis o como hijos de la Anaconda de Agua (leyenda del güío-dios).
+Los Makuna habitan en las comunidades piedra Ñi ubicada sobre el río Pirá Paraná, en las orillas del río Comeña el cual es afluente del Pirá Paraná, y en el río
+Apaporís al sur del Vaupés.
+Los resguardos indígenas que comprenden el territorio Makuna están en los departamentos del Vaupés y Amazonas. El Gran Resguardo Oriental del Vaupés es el de
+mayor población Makuna, le siguen a éste los resguardos del Amazonas: """"Comeyafu"""" que comparten con los Miraña, Yukuna, Karijona, Cubeo, Bora, Tanimuka,
+Tatuyo, Tariano, Matapí; """"Mirití Paraná"""" que comparten con los Miraña, Yukuna, Letuama, Cubeo, Makuk, Tanimuka, Cawiyari, Matapí entre otros; """"Puerto Córdoba""""
+que comparten con los Miraña, Yukuna, Cubeo, Karijona, Bora, Tanimuka, Matapí; y el """"Yaigoje-Río Apaporis"""" que comparten con los Tanimuka, Barasona, Yukuna,
+Letuama, Matapí, Makuk.
+La lengua del pueblo Makuna forma parte de la familia lingüística Tukano Oriental. Este pueblo forma parte del complejo cultural del Vaupés en donde los pueblos
+hablantes del Tukano Oriental comparten una historia, formas de explotación de recursos, formas de organización social, nombres míticos, leyendas, figuras como el
+chamán o payé y otras características. El sistema de descendencia en toda la región es patrilineal, excepto para los Tanimuka y Makuna, la regla de exogamia se
+establece a nivel de linajes máximos en el caso de los Makuna. Entre los Cubeo y Makuna, aunque las reglas de matrimonio disponen enlaces endogámicos, existe
+intercambio matrimonial con grupos vecinos, que junto con la necesaria comunicación intergrupal, hace que compartan rasgos socio-lingüísticos regionales.""
+",Vaupés,Tukano,612.0,409,En peligro,Colombia
+Puinave,"""El pueblo Puinave se ubica al oriente del territorio colombiano, principalmente en el departamento Guainia, en las riveras de los ríos Iniridad y Guaviare, y también en los
+departamentos del Guaviare y el Vichada (Triana, 1987). Los puinave mantienen su lengua nativa, perteneciente a la familia lingüística Makú-puinabe.""
+",Guainía,Maku,4318.0,3703,En peligro,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",Cundinamarca,Romaní,4858.0,4220,Vulnerable,Colombia
+Nasayuwe,"""El pueblo Nasa Yuwe, o """"gente del agua"""" también de forma generalizada como el pueblo Paéz, se concentran principalmente en la región de Tierradentro, entre
+los departamentos del Huila y el Cauca. Algunos se han radicado en el sur del Tolima, en el departamento del Valle, y otros emigraron al Caquetá y al Putumayo
+(ILV, 1994). La lengua nativa de este pueblo es la Nasa Yuwe, la cual pertenece a la familia lingüística Paéz.""
+",Cauca,Aislada,186178.0,78064,En peligro,Colombia
+Hitnu,"""Emigraron a principios del siglo XX , huyendo de la presión de los caucheros, hacia los ríos Ortguaza, Peneya y Caquetá. Actualmente viven en Arauca, en cuatro comuniddes
+localizadas en los ríos Lipa y Ele: La Ilusión, Romano, Providencia y La Conquista en el resguardo de San José del Lipa, con pequeños grupos en otros lugares del país. Su
+población se calcula entre los 415 y los 600 habitantes.""
+",Arauca,Guahibo,676.0,207,En peligro,Colombia
+Sikuani,"	""Su territorio está comprendido en el resguardo Parte Oriental del Vaupés cuya extensión alcanza las 3.354.097 hectáreas Los tariano hacen parte de los grupos del Vaupés de habla Arawak ubicados en los extremos regionales entre los que se encuentran también los
+kawiyarí y los kurripako. Aunque no se han hecho estudios recientes sobre su situación actual, en sus manifestaciones socioeconómicas y culturales, los tariano se asemejan a losgrupos de habla Tucano Oriental, por lo que se les considera parte del llama""El pueblo Sikuani se caracteriza por una historia de nomadismo que determinó su amplio patrón de asentamiento.
+Actualmente se localizan de manera sedentaria en los departamentos de Vichada, Meta, Casanare, Guanina, Arauca (principalmente en las riberas de
+los ríos Meta, Orinoco, Vichada y Manacacias), y en el país hermano de Venezuela (aproximadamente 15.000 personas). Son el pueblo de mayor
+presencia en la región de la Orinoquía colombiana.""
+do complejo cultural del
+Vaupés""	",Vichada,Guahibo,19791.0,14452,Vulnerable,Colombia
+Embera katio,"""El pueblo de Embera Katío es uno de los pueblos embera que existen en Colombia. Entre antropólogos, lingüistas y entre las comunidades embera se han
+ido diferenciando los pueblos Embera Chamí, Embera Katío y Embera siapidara.
+Dentro de los embera también existen las denominaciones de dobida, óibida y eyadiba, las cuales responden más a las zonas en las que se localizan los
+diferentes grupos embera, dobida (hombres de río), los óibida (hombres de selva), y los eyadiba (hombres de montaña). Entre los dodiba y los eyabida se
+pueden entender claramente entre ellos, ya que las diferencias en su habla son sutiles, son similares a las que existen entre un paisa de Medellín y un paisa
+de Manizales .
+Pasa lo mismo con la clasificación de los embera chamí, katio y siapidara. Lo que para unos autores son diferencias, para otros son más bien similitudes, tal
+es el caso del profesor Rito Llerena, que establece una diferenciación por isoglosas , la cual es bastante precisa.
+Los resultados de las investigaciones sobre los embera chamí, embera katío, embera dódiba, eperara siapidara establecen que todos compartieron una
+historia común y por ende características semejantes.
+En tiempos preshispánicos los embera se conocieron como indígenas """"Chocó"""", y compartieron la lengua nativa, la cosmovisión jaibaná, la movilidad territorial,
+el gobierno no centralizado, la cultura selvá¡tica y la estructura social, que radica en unidades familiares la base de su sociedad y en unidades sociales más
+amplias, el desempeño de diversas actividades (Ulloa, 1992).
+El colectivo embera, como resultado de los procesos propios de la Conquista y la Colonia, la introducción de misiones evangelizadoras, y la avanzada de
+colonos en sus tierras, y el fraccionamiento de sus tierras, entre otros factores, dispersaron a diversas comunidades embera y condicionaron desarrollos
+disímiles, a partir de los contextos naturales en los que se albergaron, y condicionados también por el tipo de poblaciones y de interacciones que afrontaron y
+que ejercieron diferentes influencias en cada grupo asentado en diferentes territorios.
+En la actualidad los chamí, katíos, dodibas, y eperara siapidaras, comparten algunos de los rasgos que en tiempos prehispá¡nicos compartieron, que aun les
+permiten una base de identidad étnica común, como los son su idioma, la tradición oral, el jaibanismo, la organización social, y la reciente participación a
+través de organizaciones regionales (Ulloa, 1992).""
+",Chocó,Chocó,38259.0,25692,Vulnerable,Colombia
+Kamsá,"""El pueblo Camëntsá -que traduce en lengua nativa """"personas de aquí mismo con pensamiento y lengua propia"""" (Plan Integral de Vida del Pueblo Camëntsá)- habita principalmente en la región del Valle de Sibundoy.
+Hermanos culturales y vecinos territoriales de Pueblo Inga, el pueblo Camëntsá posee una lengua aislada cuya familia lingüística aun no ha podido ser determinada con claridad. Goza de una ejemplar fortaleza cultural y organizativa, y son reconocidos ampliamente por sus conocimientos en etno-medicina, uso de las plantas y el manejo ambiental tradicional. El yagé es fuente principal de su conocimiento y sabiduría, el cual denominan """"el bejuco del alma"""".""
+",Putumayo,Aislada,4879.0,2280,En peligro,Colombia
+Pisamira,"""Se localizan en la margen derecha del río Vaupés. Su territorio está comprendido en el Resguardo Parte Orienal del Vaupés. El gruupo principal del
+grupo Pisamira está ubicado desde varias décadas en la comunidad de Yacayacá, a 33 Kilómetros del área de Mitú. Allá comparten su territorio con
+gente de los grupos Kubeo, Barasana, Desano, Piratapuyo,Siriano, Tucano, Tuyuca y Yurutí. Su lengua pertenece a la familia lingüística Tucano
+Oriental. Esta es una de las etnias que registra un menor número de habitantes: su población se estima en 61 personas.""
+",Vaupés,Tukano,61.0,30,En situación critica,Colombia
+Tatuyo,"""La población Tatuyo que habita en zonas urbanas corresponde al 67,7 % (258 personas), cifra inferior al promedio nacional de población indígena
+urbana que es del 21,43% (298.499 personas)""
+",Vaupés,Tukano,381.0,166,En peligro,Colombia
+Wanano,"""El territorio del pueblo wanano con mayor concentración poblacional está comprendido en el Resguardo Parte Oriental del Vaupés, ocupa un total de 3.354.097
+hectáreas y está dividido en tres partes que corresponden a jurisdicción de los municipios de Mitú, Carurú y del corregimiento departamental Yavarate; dentro de
+dicha extensión territorial, se ubican otros 18 pueblos indígenas como los Tuyuca, Desano y Piratapuyo. Los wanano se localizan en frontera con Brasil en el Medio
+Río Caiarí-Vaupés, asentamientos de Santa Cruz, Villa Fátima, Yapima, Carurú, Tayasú, Ibacab y Yapima. En Venezuela, también se ha registrado un número escaso
+de población wanano cuya presencia obedece a migraciones por factores económicos. Igualmente hay comunidades wanano en el departamento de Guainía:
+Resguardo El Venado, y departamento del Guaviare: Resguardo Puerto Viejo y Puerto Esperanza y Resguardo Vuelta del Alivio.""
+",Vaupés,Tukano,1035.0,924,En peligro,Colombia
+Miraña,"""Los Miraña o """"Gente de Agua"""" se localizan a orillas del río Comeña, y en las Bocas de los ríos Apaporis y Pirá-Paraná, al sur del departamento del Vaupés.
+Comparten su territorio con los karijona, kubeo, matapá, miraña, tanimuka y yukuna en el resguardo Mirití-Paraná ubicado en jurisdicción del departamento del
+Amazonas. Los Miraña hacen parte del complejo cultural del Vaupés, cuyos grupos -hablantes de la lengua Tukano Oriental- comparten una historia común,
+formas de explotación de recursos, sistemas de organización social, nombres míticos y otros elementos de su cosmovisión.""
+",Amazonas,Bora,274.0,87,En peligro de extinción,Colombia
+Nonuya,"""Están localizados en el Resguardo de Villa Azul, Puerto Santander, departamento del Amazonas en un área de 59.840 hectáreas.
+
+Para la mayoría de pueblos que habitan la región del Amazonas, el uso de plantas sagradas se constituye en un elemento fundamental dentro de su vida cultural
+y social. El Yurupaí; es el ritual más trascendental porque rememora los orígenes y revive los elementos esenciales de su cosmovisión.""
+",Amazonas,Witoto,90.0,4,En situación critica,Colombia
+Tanimuka,"""Los tanimuka se ubican en el departamento del Amazonas, en los ríos Apaporis, Guacayá, Oiyaká-Mirití. La mayor parte de la población está localizada en el
+resguardo Yaigojé, Río Apaporis. Comparten su territorio con las comunidades del Resguardo del Mirití-Paraná y Comefayú.""
+",Amazonas,Tukano,342.0,194,En peligro de extinción,Colombia
+Yuruti,"""El Censo DANE 2005 reportó 337 personas autoreconocidas como pertenecientes al pueblo Yururi, de las cuales el 44,3% son hombres (167
+personas) y el 55,7% mujeres (210 personas). El 81,1% de la población 306 personas, se localiza en el departamento del Vaupés. Le siguen el
+departamento de Meta con el 3,7% de la población (14 habitantes), Guaviare con el 3,7% (14 habitantes).
+La población Yuriti que habita en zonas urbanas corresponde al 51,9% (196 personas), cifra inferior al promedio nacional de población indígena
+urbana que es del 21,43% (298.499 personas)""
+",Vaupés,Tukano,377.0,266,En peligro,Colombia
+Yaruro,"""Abarca el estado de Apure en Venezuela, Arauca y Casanare en Colombia. Cunaviche al norte, Capanaparo Riecito en el centro, Cinacuro, Brazo Cinacuro en el sur, 
+curso medio del río Capanaparo y Cinacuro (Castro, 2000). En Colombia sólo quedaron algunas pocas familias aisladas como campesinos, el resto migró a 
+Venezuela a causa de persecusión por parte de los llaneros, y la mantanza generalizada de indígenas en la región de los llanos legitimada desde su idea de """"limpiar 
+las sabanas de serpientes, de tigres y de indios"""" para liberar terrenos para el ganado extensivo (Ortiz, 2005- 2006 ).""
+",Vichada,Pumafa,63.0,56,Vulnerable,Colombia
+Yagua,"""El pueblo Yagua se ubica entre el río Putumayo y el Yavarí en la frontera entre Brasil y Perú asentándose a lo largo del río Amazonas. Su ubicación en el Trapecio Amázonico lo
+relaciona de forma cercana entre otros, con los pueblos Tikuna y Cocama. Los principales resguardos indígenas en los que se ubican son del departamento del Amazonas : Santa
+Sofía y El Progreso en jurisdicción de Leticia y en el resguardo Puerto NARIÑO, los cuales comparten con las etnias Tikuna y Cocama, correspondientemente. Los Yagua son un
+grupo minoritario que históricamente ha compartido territorio con los Tikuna, adoptado algunas de sus tradiciones y prácticas.
+Los yaguas se autodenominan nihamwo """"la gente"""" y en mayor número están ubicados en Perú, desde Iquitos a la frontera con Brasil y en Brasil. La lengua yagua de la cual es
+hablante este pueblo es la última existente de la familia lingüística Peba-Yagua, durante la Colonia esa familia estaba conformada al menos por dos lenguas (peba y yameo), por
+esta razón la lengua yagua se considera independiente. El idioma yagua evidencia influencias del cocama, tikuna y quechua. Precisamente de este último, el quechua, se deriva la
+denominación Yagua. Yawar o yaguar significa sangre o color de sangre y hace referencia a la práctica de esta etnia de pintarse el cuerpo con achiote y a su autopercepción de
+verse como rojos.""
+",Amazonas,Aislada,1007.0,494,En peligro,Colombia
+Cocama,"""Los Cocama o Cocamillas son un pueblo indígena que habita en la amazonía peruana, en el Trapecio Amazónico colombiano (en los municipios de Leticia y Puerto NARIÑO) y en
+Brasil, de donde son originarios y de donde llegan a Perú mediante migraciones prehispánicas y se expanden luego hacía la Amazonía colombiana. En Colombia, los Cocama
+poseen una población de 2.204 habitantes que viven en el Resguardo de San José, en Puerto NARIÑO y Leticia, en La Playa (Leticia) y en Puerto Triunfo. En el resguardo de Puerto
+NARIÑO y Leticia conviven con otros pueblos indígenas como los Tikuna, lo que los hace compartir el territorio colectivo.""
+",Amazonas,Tupafa,2204.0,213,En peligro de extinción,Colombia
+Wayuunaiki,"""El pueblo Wayuú ha luchado con las adversidades naturales de la región de la Guajira, tierra de sol, arena y vientos, además de enfrentar
+discriminación, racismo, marginación y violencia por parte de algunos habitantes no indígenas de la región.
+Los Wayuú son grandes artesanos y comerciantes y han sido luchadores incansables por sus derechos. Es una comunidad considerada cultural y
+socialmente fuerte, que ha logrado articularse de manera exitosa a procesos regionales y nacionales en el ámbito económico, cultural, social, político y
+económico, sin perder su quehacer tradicional ni evidenciar debilitamiento de su cultura.
+La palabra Wayúu es la autodesignación usada por los indígenas, y traduce """"persona"""" en general, indígena de la propia etnia, aliado y también la
+pareja (mi esposo o mi esposa). Se opone al término """"arijuna"""" con el que se designa a una persona extraña, un posible enemigo, un conquistador, que
+no respeta las normas.""
+",La guajira,Arawak,270413.0,230514,Vulnerable,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",Atlántico,Romaní,4858.0,4220,Vulnerable,Colombia
+Kurripaco,""" El pueblo indígena Kurripako concentra se localiza en los departamentos de Guanía, Guaviare y Vaupés, principalmente en las afluentes de los ríos Guainía, Isana, Cuyari, Atabapo,
+y en menor cantidad los ríos Inírida y Guaviare. Los kurripaco además viven en numerosos asentamientos en Brasil y Venezuela. La lengua nativa es la Kurripako perteneciente a la
+familia lingüística Arawak, y presenta variaciones dialectales según los clanes, y los asentamientos ribereños.""
+",Guainía,Aislada,0.0,0,En peligro,Colombia
+Barasana,"""El pueblo Barasano actualmente está ubicado en Caño Colorando, en el río Pirá-Paraná, en la Amazonía colombiana. Este pueblo se divide en los barasano del sur, y en los barasano del norte
+(que tienen algunas especificidades Ver documento del Pueblo Bara la Gente Pez). El resguardo con mayor concentración de Barasano es el Gran Resguardo Oriental del Vaupés, el cual es
+cohabitado por 18 pueblos.El pueblo indígena Barasano habita, en un territorio selvática, con colinas y cruzado por una gran cantidad de arroyuelos (ILV, 1994). En la región conviven con otros
+pueblos indígenas, sobretodo han tenido una relación cercana con el pueblo Taibano o Eduria (ILV, 1994). Entre los diferentes pueblos indígenas que conviven en este territorio comparten una
+visión del territorio, con sus recursos naturales, como un espacio indispensable para el desarrollo de sus tradiciones, sus prácticas rituales y su identidad como pueblo indígena.""
+",Vaupés,Tukano,351.0,232,En situación critica,Colombia
+Bari,"""El pueblo Bari se ubica principalmente en el departamento de Norte de Santander en Colombia cobijado por la Serranía de los Motilones, y en asentamientos en Venezuela. A
+los Barí se les ha reconocido el resguardo Motilón Barí- en los municipios de Carmen, Convencion y Teorama, y el resguardo Bari catalaura- en los municipios de Tarra y Tibú.
+Los bari habitan en la hoya del río Catatumbo, región boscosa, húmeda tropical. Sus tierras descienden desde el nudo de Santurbán, en la cordillera oriental, y disponen de
+distintas corrientes de agua. El pueblo Bari conserva el Barí, su lengua nativa, perteneciente a la familia linguística Chibcha.""
+",N. santander,Chibcha,5926.0,3348,Vulnerable,Colombia
+Tariano,"""Su territorio está comprendido en el resguardo Parte Oriental del Vaupés cuya extensión alcanza las 3.354.097 hectáreas
+
+Los tariano hacen parte de los grupos del Vaupés de habla Arawak ubicados en los extremos regionales entre los que se encuentran también los
+kawiyarí y los kurripako. Aunque no se han hecho estudios recientes sobre su situación actual, en sus manifestaciones socioeconómicas y
+culturales, los tariano se asemejan a losgrupos de habla Tucano Oriental, por lo que se les considera parte del llamado complejo cultural del
+Vaupés""
+",Vaupés,Arawak,445.0,0,En situación critica,Colombia
+Bora,"""El pueblo Bora tiene su origen en La Chorrera. Se encuentra ubicado riberas del río Putumayo, en el departamento del Amazonas, en el bajo Igará-Paraná y en el río Ampiyacú en
+el Perú. Según su cosmovisión son gente de centro, pertenecientes a la cultura de los hijos del tabaco, la coca y la yuca dulce. Muchas de sus tradiciones las comparten con los
+Uitoto, Muinane y Ocaina.""
+",Amazonas,Witoto,933.0,377,Vulnerable,Colombia
+Palenque,"Los embera dódiba son uno de los pueblos embera colombianos , concentrados principalmente en el río Chocó. Existe la diferenciación de los embera
+en chamí, katío y siapidara, y también existen las denominaciones de dobida, óibida y eyadiba. Todas desde el punto de vista lingüístico implican
+variaciones dialectales.
+Los embera dobida (hombres de río) se diferencia del los óibida (hombres de selva), y de los de la zona conocida como eyadiba (hombres de montaña).
+Entre los dodiba y los eyabida se pueden entender claramente entre ellos, ya que las diferencias en su habla son sutiles, son similares a las que existen
+entre u""San Basilio de Palenque es un corregimiento del municipio de Mahates, en el
+departamento de Bolivar, a 50 km al suroriente de la ciudad de Cartagena. El casco
+urbano de San Basilio de Palenque, está dividido en dos barrios, Barrio Arriba y Barrio
+Abajo, separados por la iglesia y el puesto de salud. Las casas tradicionales del
+Palenque están hechas de paredes de bareque y un techo cónico hecho de palma;
+tienen un patio, un solar y una empalizada. Generalmente, la cocina consiste en un
+rancho con techo, ubicado en el patio trasero de la casa, en el que ubica un fogón con la
+leña para la cocción de los alimentos.""
+n paisa de Medellín y un paisa de Manizales .",Bolívar,Criolla,7470.0,2788,En peligro,Colombia
+Inga,"""El pueblo Inga se localiza principalmente en el Valle del Sibundoy- a 2.200 metros sobre el nivel del mar- en el departamento del Putumayo. Son descendientes
+de los Incas y arribaron a la región como avanzadas militares en el proceso de expansión del imperio.
+Esta comunidad comparte rasgos culturales y organizativos con el pueblo Camëntsá, sin embargo mientras este se dedica principalmente a actividades
+agrícolas, el pueblo Inga tiene una tradición viajera y un espíritu comerciante.
+Son ampliamente conocidos por su patrón de movilidad alta, habilidad artesanal, conocimientos chamánicos y poderes curativos.""
+",Putumayo,Quechua,15450.0,7090,En peligro,Colombia
+Siona,"""El pueblo indígena Siona, denominado también ganteyabain, ganteya, ceona, zeona, kokakanú o Katucha-Pai como se autoreconocen, se encuentra
+ubicado principalmente en el departamento de Putumayo a orillas de los ríos Putumayo, Piñuña Blanco y Cuehembí, en el municipio de Puerto Asís y
+Puerto Leguízamo, en la frontera con Ecuador. Los principales resguardos son Buena Vista y Santa Cruz en un área de 13.127 hectáreas. Su lengua
+materna es la Ceona de la familia lingüística Tukano Occidental.""
+",Putumayo,Tukano,1829.0,404,En situación critica,Colombia
+Koreguaje,"El pueblo indígena Koreguaje, denominado también korebaju, coreguaxe o coreguaje, se encuentra ubicado principalmente en el departamento del Caquetá a las riberas y afluentes de los ríos Orteguaza y Caquetá, concentrando el 93,6% de la población total de esta etnia. Anteriormente se conocían como Guaje, Payagaxes, Guaques y Piojés. Su lengua materna es el Korebaju de la familia lingüística Tukano Occidental
+",Caquetá,Tukano,1767.0,1384,En peligro,Colombia
+Carijona,"""Los Karijona se ubican en el Bajo río Vaupés, Puerto Nare y río Caquetá. Antiguamente vivían a orillas del río Yarí, en el Caquetá. Desde los años cuarenta,
+se trasladaron al área del río Apaporis y en épocas recientes al resguardo de Komefayú en el río Caquetá y en el Mirití Paraná, departamento del Amazonas.
+Algunos viven en las localidades de Puerto Córdoba y La Pedrera. En el Mirita comparten territorio con otros pueblos agrupados en el resguardo del mismo
+nombre. Su lengua pertenece a la familia lingüística Caribe.""
+",Vaupés,Caribe,307.0,10,En situación critica,Colombia
+Kuna,"""Los Tule están ubicados en la región del Darién, en el Urabá antioqueño y chocoano. Se concentran principalmente en las localidades de Arquía, en
+el departamento del Chocó, y la mayoría en Caimán Nuevo, en el departamento de Antioquia. La mayor parte de la población tule vive en Panamá, en
+la comarca de San Blas y el bajo río Bayano. La lengua Tule pertenece a la familia lingüística Chibcha.""
+",Antioquia,Chibcha,2383.0,1495,En peligro de extinción,Colombia
+Ocaina,"""Se localizan en el río Igará-Paraná, Departamento del Amazonas. Están ubicados en el resguardo llamado Predio Putumayo que tiene un área de 5.818.702
+hectáreas. Los ocaina habitaron el alto Igará-Paraná y el alto Cahuinarí. La mayoría de este grupo vive en el río Ampicayú en el Perú.""
+",Amazonas,Witoto,285.0,94,En peligro de extinción,Colombia
+Taiwano,"	""El pueblo Yagua se ubica entre el río Putumayo y el Yavarí en la frontera entre Brasil y Perú asentándose a lo largo del río Amazonas. Su ubicación en el Trapecio Amázonico lo
+relaciona de forma cercana entre otros, con los pueblos Tikuna y Cocama. Los principales resguardos indígenas en los que se ubican son del departamento del Amazonas : Santa
+Sofía y El Progreso en jurisdicción de Leticia y en el resguardo Puerto NARIÑO, los cuales comparten con las etnias Tikuna y Cocama, correspondientemente. Los Yagua son un
+grupo minoritario que históricamente ha compartido territorio con los Tikuna, adoptado algunas de sus tradiciones y prácticas.
+Los yaguas se autodenominan nihamwo """"la gente"""" y en mayor número están ubicados en Perú, desde Iquitos a la frontera con Brasil y en Brasil. La lengua yagua de la cual es
+hablante este pueblo es la última existente de la familia lingüística Peba-Yagua, durante la Colonia esa familia estaba conformada al menos por dos lenguas (peba y yameo), por
+esta razón la lengua yagua se considera independiente. El idioma yagua evidencia influencias del cocama, tikuna y quechua. Precisamente de este último, el quechua, se deriva la
+denominación Yagua. Yawar o yaguar significa sangre o color de sangre y hace referencia a la práctica de esta etnia de pintarse el cuerpo con achiote y a su autop""Se ubican en el departamento del Vaupés, en la parte central del Pirá-Paraná, río Cananarí. Hay algunos miembros en los ríos Paca y Tiquie, con una población total
+de 22 habitantes. Los taiwano subsisten principalmente de la casa, pesca, recolección de frutos y de la horticultura. Cultivan la yuca. El tabaco es un cultivo a cargo de los hombres.
+Cada familia posee tres chagras.""
+ercepción de
+verse como rojos.""	",Vaupés,Tukano,166.0,0,En peligro,Colombia
+Piaroa,"""Se denominan así mismos como Wotiheh, Uhothuha o Dearwa. Se ubican en el Río Guaviare, caño Matavén al sur del departamento del Vichada.
+Esta misma etnia se le conoce con la autodenominación de huotuja o wotjuja, en los municipios de Autana, Atabapo y Manapiare en el Estado de
+Amazonas, República de Venezuela. Su población estimada en este país es de 11.539 personas.""
+",Vichada,Saliba,773.0,0,En peligro,Colombia
+Piratapuyo,"""Habita en el Noreste de la Región Amazónica en el Bajo Papurí, Departamento del Vaupés y tambien en el Brasil, su territorio está comprendido en el
+resguardo Parte Orientald del Vaupés, con una población estimada de 630 personas.""
+",Vaupés,Tukano,814.0,574,En situación critica,Colombia
+Ika arhuaco,"""El pueblo Arhuaco - como es conocido comúnmente- se autoidentifica como Wintukwa, que traduce """"gente"""" en lengua Ika (Tracy, 19997). 
+Este pueblo indígena es uno de los cuatro pueblos que habitan en la Sierra Nevada de Santa Marta, específicamente en la región surorientalcreadores del universo, y la solidaridad con los miembros de la comunidad y de los pueblos vecinos.""
+",Magdalena,Chibcha,14700.0,12800,Vulnerable,Colombia
+Cofán,"""El pueblo Cofán habita al noroccidente de la Amazonía Colombo-Ecuatoriana entre los ríos Guamués (Afluente del Putumayo) y el Aguaricó (afluente
+del Napo). Su historia está marcada por una lucha constante por la protección de sus territorios y su cultura; y ante el debilitamiento de sus tradiciones,
+y en la actualidad por el inicio de procesos organizativos y de recuperación cultural.""
+",Putumayo,Aislada,1657.0,544,En peligro de extinción,Colombia
+Awapit,"""El pueblo Awá Kuaiker se ubica en la parte occidental del Macizo Andino, desde la cuenca del río Telembí hasta la parte norte del Ecuador. Su población reside
+en varios resguardos sobre la región nariñense, y en inmediaciones del Putumayo, de forma predominante en los municipios del Cumbal, Mallama, Ricaurte,
+Barbacoas y en Villa Garzón.""
+",Nariño,Barbacoa,25813.0,8555,En situación critica,Colombia
+Bará,"El pueblo Bara (o Barasano Norte) está localizado entre los ríos Colorado, Papuyurí, Tiquié, Yapú, Macucú e Inambú, en el Gran Resguardo Oriental del Vaupés, en el nororiente del Amazonas, en el cual cohabitan con otros pueblos indígenas.
+",Vaupés,Tukano,0.0,0,En peligro,Colombia
+Kogui,"""El pueblo indígena Kaggabba es uno de los cuatro pueblos de la sierra nevada de Santa Marta. Están ubicados en las laderas templadas del norte,
+oriente y occidente de la sierra, concentrados principalmente en la región- vertiente norte sobre el mar Caribe que presenta mayor precipitación pluvial
+en los afluentes de los ríos don Diego, Palomino, y Ancho.""
+",Magdalena,Chibcha,9173.0,7739,Vulnerable,Colombia
+Uitoto,"""Los uitoto habitan la zona sur de la Amazonía colombiana. En el departamento del Amazonas viven en los ríos Caquetá, Putumayo, Igará-Paraná y Cará-
+Paraná. En el Departamento del Putumayo están ubicados sobre el curso medio del río Putumayo, al oeste del Resguardo Predio Putumayo. En el
+Departamento del Caquetá se encuentran sobre el río del mismo nombre un poco aislados del resto del grupo, a causa de los raudales del Araracuara. También
+se encuentra población Uitoto en el Perú. La etnia es afín con los grupos ocaina y muinane.""
+",Amazonas,Witoto,6444.0,2982,En peligro,Colombia
+Tinigua,"""Último indígena Tinigua vive en las selvas de Colombia: Sixto, el último de los Tinigua; A cuatro horas de La Macarena vive Sixto, que salió por última
+vez de allí hace seis meses. Sixto Muñoz vive como un ermitaño en la Serranía de La Macarena (Meta). Su etnia fue exterminada y es el último que
+habla su lengua. Pueblo indígena que habitó en las cuencas de los ríos Yarí, Caguán y Guayabero en el hoy departamento del Caquetá, Colombia.""
+",Meta,Aislada,1.0,1,En situación critica,Colombia
+U'wa,"""El pueblo indígena U'wa - que traduce """"gente inteligente que sabe hablar""""- ocupa hoy gran parte del ecosistema natural de la Sierra Nevada del Cocuy, y el pie
+de monte de la Cordillera Oriental de los Andes, y las sabanas planas del departamento de Arauca. Además está presente en los departamentos de Boyacá,
+Santander, Norte de Santander y Casanare.""
+",Arauca,Chibcha,7581.0,6264,En peligro,Colombia
+Andoque,"En cercanías de Araracuara, población ubicada cerca de las riberas del río Caquetá, vive uno de los pueblos indígenas colombianos con menor número de habitantes, pero con gran capacidad para conservar sus tradiciones ancestrales: Los Andoke. Los Andoke están localizados en su mayoría en los departamentos del Caquetá y el Amazonas, el 45% de su población se localiza en áreas urbanas, lo cual supone un factor de riesgo cultural. Los Andoke habitan en los resguardos de Predio Putumayo, Nunuya Villa Azul, Aduche, los cuales comparten con otras etnias. Su territorio ancestral corresponde a la zona comprendida entre la bocana del río Quinche hasta la bocana del caño Monochoa, y los ríos Duce y Jakapuce que desembocan en el río Cahuinarí.
+",Amazonas,Aislada,200.0,46,En peligro de extinción,Colombia
+Nukak,"""El pueblo indígena Nukak Makuk ha tenido una tradición no sedentaria, que lo mantuvo en aislamiento hasta finales del siglo XX:
+Los nukak fueron los últimos en entrar en contacto con el Estado colombiano (Politis 1992:11 citado por Salazar, 2000). El escaso conocimiento que por
+mucho tiempo se tuvo de los Nukak se debió en gran parte a su naturaleza móvil, la cual empezó a investigarse desde 1967. En su mito de origen los
+Nukak provienen de la tierra hueca, todo el pueblo a la superficie de la tierra de un hueco u orificio, imagen que se revive cuando las mujeres dan a luz en
+un hueco en la tierra.""
+",Guaviare,Maku,1080.0,299,En peligro,Colombia
+Namtrik,"""El pueblo Misak , ha sido conocido de manera generalizada como pueblo Guambiano, denominación con la que los españoles se refirieron a ellos, y aunque el Censo 2005 los
+identifica como guambianos ellos se autoreconocen como pueblo Misak.
+Los misak conservan su lengua materna denominada Wampi-misamerawam, y la consideran un factor fundamental de su identidad étnica y cultural. Este pueblo se localiza al
+noroeste del departamento del Cauca, en donde se concentran sus territorios ancestrales. En lengua Misak, Kauca significa """"madre de los bosques"""".
+Para los misak, la naturaleza es la madre y el espíritu de vida, los elementos del cosmos y del mundo son un conjunto, la diversidad biótica y abiótica integran la tierra, que en el
+tiempo y en el espacio sustentó las vidas de la gente, les dotá de alimentos, sabiduría, dignidad e identidad (Guambía, 2007).""
+",Cauca,Barbacoa,21085.0,13715,En peligro,Colombia
+Cacua,"""Localizados en el interfluvio de los ríos Querarí y Vaupés. Comparten su territorio con grupos kubeo en Wacará, Caño Perezoso y Caño Pajarito. Se
+encuentran también en el río Macú-Paraná, en Pueblo Nuevo y Caño Castaño junto a población Hupdu.Este grupo, hablante de una de las lenguas
+pertenecientes a la familia Maku-Puinave, ha sido generalmente asociado con los nukak dada su afinidad lingüística, cultural y geográfica.""
+",Vaupés,Tukano,482.0,231,En peligro,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",Córdoba,Romaní,4858.0,4220,Vulnerable,Colombia
+Creole,"""El pueblo raizal es la población nativa de las islas de San Andrés, Providencia y Santa
+Catalina, que para evitar confusión con la denominación de “nativos"""" dada a los
+indígenas se hacen llamar  “raizales"""" (Mow, 2006) y son el producto del mestizaje entre
+indígenas, españoles, franceses, ingleses, holandeses y africanos, primando la cultura
+británica que fue la que colonizó de manera más fuerte las islas del Caribe.""
+",San andrés,Criolla,83403.0,0,Vulnerable,Colombia
+Gitanos-rom,"""¿Quiénes son- Kon si von- los Rrom? son los
+descendientes del milenario pueblo gitano, el cual
+tiene una serie de características propias que lo
+diferencian de otros pueblos y de la sociedad
+colombiana mestiza.
+Los gitanos colombianos hacen parte de la nación
+gitana que en el mundo ha compartido un estilo de
+vida con altos patrones de movilidad, que trascendía
+fronteras nacionales y no los aferraba a ningún
+territorio de manera nómada. Para un Rrom
+encontrarse con otro de cualquier nación es hallar
+parte de su Nación. Los gitanos en el mundo han
+pervivido como grupo poblacional gracias a la
+sostenibilidad de la cultura, a pesar de las diferentes
+persecuciones que sufrieron a través de la historia, y
+de los procesos de homogeinización propios de la
+globalización.""
+",Antioquia,Romaní,4858.0,4220,Vulnerable,Colombia
+Cabiyari,"""El pueblo Kawiyari vive a orillas del río Apaporis medio y el caño Cananarí, en el departamento del Vaupés, en el Resguardo Parte Oriental del Vaupés. Su territorio
+es de dificil acceso lo que ha mantenido su cultura más aislada que otras y sus tradiciones más arraigadas. Comparten características culturales con los diferentes
+pueblos indígenas del complejo cultural del Vaupes, con quienes mantienen intercambios materiales e inmateriales. Su lengua nativa hace parte de la familia
+lingüística Arawak.""
+",Vaupés,Arawak,233.0,82,En situación critica,Colombia
+Muinane,"""A pesar de que en el listado del Dane se incluye a los muinane dentro de la población uitoto, en la zona y en la literatura etnográfica son considerados como
+una etnia aparte. Se les conoce como los muinane de la sabana, justamente para diferenciarlos del sector uitoto que lleva el mismo nombre. Su denominación
+significa """"hombre de la desembocadura del río""""""
+",Amazonas,Bora,87.0,50,En peligro,Colombia
+Piapoco,"""Se localizan al sur del Departamento del Vichada en los resguardos del Brazo Amanavén conocidos como Morocoto-Buenavista, Yuri, Flores-Sombrero y Cali-
+Barranquillita. En la margen derecha del río Vichada en los resguardos del Unuma, Sarakure y Kawanaruba. En el Guainía en Murciélago -Altamira, Pueblo Nuevolaguna
+Colorada y Concordia. Actualmente tienen una fuerte presencia en la ciudad de Inírida y en el asentamiento de Barrancominas, departamento del Guainía. En
+Venezuela se encuentran en los estados de Amazonas y Bolívar, con una población de 1.333 personas.Su población estimada en Colombia es de 4.926 personas.""
+",Vichada,Arawak,3508.0,2932,En peligro,Colombia
+Karapana,"""Los Carapana se autodenominan Ucomaja """"los médicos de la gran abeja del río"""" o """"gente zancudo""""; son un pueblo indígena ubicado en el departamento del
+Vaupés, esparcidos por los ríos Ti, Pirá Paraná, comunidad de San Antonio (Papurí) y Vaupés dentro del Gran Resguardo Oriental del Vaupés creado mediante
+Res.086 del 27 de julio de 1882. Tambien hay asentamientos Carapana en el Departamento de Guaviare en los resguardos """"Vuelta del Alivio"""" que corresponde
+al municipio de Miraflores, creado por la Res.046 del 30 de noviembre de 1998 y que comparten con los Wanano, Cubeo y Piratapuyo, y """"El Itilla"""" en el
+municipio de Calamar, con Res.018 del 10 de diciembre de 2002 y donde también se ubican Desanos, Tukanos y Cubeos. Su territorio se caracteriza por se una
+zona interfluvial, con un clima húmedo y suelos complejos donde sobresale la selva que posibilita una rica fauna y tierras fértiles para el cultivo, la pescaes una
+de las actividades fundamentales de subsistencia.""
+",Vaupés,Tukano,482.0,231,En peligro,Colombia
+Awajún,NA,Amazonas,Jíbaro,NA,55.366,NA,Peru
+Quechua,NA,Amazonas,Quechua,NA,8.257,NA,Peru
+Wampis,NA,Amazonas,Jíbaro,NA,10.163,NA,Peru
+Quechua,NA,Áncash,Quechua,NA,"3,360,331",NA,Peru
+Ashaninka,NA,Apurímac,Arawak,NA,71.85,NA,Peru
+Quechua,NA,Apurímac,Quechua,NA,"3,360,331",NA,Peru
+Aimara,NA,Arequipa,Aru,NA,443.248,NA,Peru
+Quechua,NA,Arequipa,Quechua,NA,"3,360,331",NA,Peru
+Ashaninka,NA,Ayacucho,Arawak,NA,71.85,NA,Peru
+Matsigenka,NA,Ayacucho,Arawak,NA,0,NA,Peru
+Quechua,NA,Ayacucho,Quechua,NA,"3,360,331",NA,Peru
+Awajún,NA,Cajamarca,Jíbaro,NA,55.366,NA,Peru
+Quechua,NA,Cajamarca,Quechua,NA,"3,360,331",NA,Peru
+Awajún,NA,Callao,Jibaro,NA,36.312,NA,Peru
+Quechua,NA,Callao,Quechua,NA,0,NA,Peru
+Aimara,NA,Cusco,Aru,NA,443.248,NA,Peru
+Ashaninka,NA,Cusco,Arawak,NA,71.85,NA,Peru
+Harakbut,NA,Cusco,Harakbut,NA,2.092,NA,Peru
+Kakinte,NA,Cusco,Arawak,NA,439,NA,Peru
+Matsigenka,NA,Cusco,Arawak,NA,11.275,NA,Peru
+Nanti,NA,Cusco,Arawak,NA,250,NA,Peru
+Quechua,NA,Cusco,Quechua,NA,"3,360,331",NA,Peru
+Yine,NA,Cusco,Arawak,NA,3.261,NA,Peru
+Yora (nahua),NA,Cusco,Pano,NA,0,NA,Peru
+Quechua,NA,Huancavelica,Quechua,NA,"3,360,331",NA,Peru
+Ashaninka,NA,Huánuco,Arawak,NA,71.85,NA,Peru
+Kakataibo,NA,Huánuco,Pano,NA,499,NA,Peru
+Quechua,NA,Huánuco,Quechua,NA,"3,360,331",NA,Peru
+Shipibo-konibo,NA,Huánuco,Pano,NA,22.517,NA,Peru
+Yanesha,NA,Huánuco,Arawak,NA,7.523,NA,Peru
+Quechua,NA,Ica,Quechua,NA,29.632,NA,Peru
+Ashaninka,NA,Junín,Arawak,NA,71.85,NA,Peru
+Kakinte,NA,Junín,Arawak,NA,439,NA,Peru
+Nomatsigenga,NA,Junín,Arawak,NA,8.455,NA,Peru
+Quechua,NA,Junín,Quechua,NA,"3,360,331",NA,Peru
+Yanesha,NA,Junín,Arawak,NA,7.523,NA,Peru
+Quechua,NA,La libertad,Quechua,NA,631,NA,Peru
+Quechua,NA,Lambayeque,Quechua,NA,"3,360,331",NA,Peru
+Aimara,NA,Lima,Aru,NA,443.248,NA,Peru
+Ashaninka,NA,Lima,Arawak,NA,1.75,NA,Peru
+Cauqui,NA,Lima,Aru,NA,1,NA,Peru
+Jaqaru,NA,Lima,Aru,NA,740,NA,Peru
+Matsigenka,NA,Lima,Arawak,NA,0,NA,Peru
+Quechua,NA,Lima,Quechua,NA,456.225,NA,Peru
+Shipibo-konibo,NA,Lima,Pano,NA,0,NA,Peru
+Achuar,NA,Loreto,Jíbaro,NA,10.725,NA,Peru
+Arabela,NA,Loreto,Záparo,NA,403,NA,Peru
+Awajún,NA,Loreto,Jíbaro,NA,55.366,NA,Peru
+Bora,NA,Loreto,Bora,NA,1.91,NA,Peru
+Capanahua,NA,Loreto,Pano,NA,384,NA,Peru
+Chamicuro,NA,Loreto,Arawak,NA,63,NA,Peru
+Ikitu,NA,Loreto,Záparo,NA,519,NA,Peru
+Kandozi-chapra,NA,Loreto,Kandozi,NA,5.641,NA,Peru
+Kukama-kukamiria,NA,Loreto,Tupí-guaraní,NA,11.307,NA,Peru
+Maijiki,NA,Loreto,Tucano,NA,390,NA,Peru
+Matses,NA,Loreto,Pano,NA,1.724,NA,Peru
+Muniche,NA,Loreto,Muniche,NA,4,NA,Peru
+Murui-muinani,NA,Loreto,Huitoto,NA,1.864,NA,Peru
+Ocaina,NA,Loreto,Huitoto,NA,218,NA,Peru
+Omagua,NA,Loreto,Tupi-guaraní,NA,10,NA,Peru
+Quechua,NA,Loreto,Quechua,NA,"3,360,331",NA,Peru
+Resígaro,NA,Loreto,Arawak,NA,2,NA,Peru
+Secoya,NA,Loreto,Tikuna,NA,921,NA,Peru
+Shawi,NA,Loreto,Cahuapana,NA,21.65,NA,Peru
+Shipibo-konibo,NA,Loreto,Pano,NA,22.517,NA,Peru
+Shiwilu,NA,Loreto,Cahuapana,NA,352,NA,Peru
+Taushiro,NA,Loreto,Záparo,NA,1,NA,Peru
+Tikuna,NA,Loreto,Tikuna,NA,6.982,NA,Peru
+Urarina,NA,Loreto,Shimaco,NA,4.854,NA,Peru
+Wampis,NA,Loreto,Jíbaro,NA,10.163,NA,Peru
+Yagua,NA,Loreto,Peba-yagua,NA,5.679,NA,Peru
+Yine,NA,Loreto,Arawak,NA,3.261,NA,Peru
+Aimara,NA,Madre de dios,Aru,NA,991,NA,Peru
+Amahuaca,NA,Madre de dios,Pano,NA,301,NA,Peru
+Ese eja,NA,Madre de dios,Tacana,NA,588,NA,Peru
+Harakbut,NA,Madre de dios,Harakbut,NA,2.092,NA,Peru
+Iñapari,NA,Madre de dios,Arawak,NA,4,NA,Peru
+Matsigenka,NA,Madre de dios,Arawak,NA,11.275,NA,Peru
+Nahua,NA,Madre de dios,Pano,NA,0,NA,Peru
+Quechua,NA,Madre de dios,Quechua,NA,"3,360,331",NA,Peru
+Shipibo-konibo,NA,Madre de dios,Pano,NA,22.517,NA,Peru
+Yine,NA,Madre de dios,Arawak,NA,3.261,NA,Peru
+Aimara,NA,Moquegua,Aru,NA,443.248,NA,Peru
+Quechua,NA,Moquegua,Quechua,NA,"3,360,331",NA,Peru
+Ashaninka,NA,Pasco,Arawak,NA,71.85,NA,Peru
+Quechua,NA,Pasco,Quechua,NA,"3,360,331",NA,Peru
+Yanesha,NA,Pasco,Arawak,NA,7.523,NA,Peru
+Quechua,NA,Piura,Quechua,NA,53,NA,Peru
+Aimara,NA,Puno,Aru,NA,443.248,NA,Peru
+Quechua,NA,Puno,Quechua,NA,"3,360,331",NA,Peru
+Awajún,NA,San martín,Jíbaro,NA,55.366,NA,Peru
+Quechua,NA,San martín,Quechua,NA,"3,360,331",NA,Peru
+Shawi,NA,San martín,Cahuapana,NA,21.65,NA,Peru
+Aimara,NA,Tacna,Aru,NA,443.248,NA,Peru
+Quechua,NA,Tumbes,Quechua,NA,22,NA,Peru
+Amahuaca,NA,Ucayali,Pano,NA,301,NA,Peru
+Ashaninka,NA,Ucayali,Arawak,NA,71.85,NA,Peru
+Awajún,NA,Ucayali,Jibaro,NA,38,NA,Peru
+Cashinahua,NA,Ucayali,Pano,NA,1.633,NA,Peru
+Isconahua,NA,Ucayali,Pano,NA,3,NA,Peru
+Iskonowa,NA,Ucayali,Pano,NA,5,NA,Peru
+Kakataibo,NA,Ucayali,Pano,NA,499,NA,Peru
+Kukama-kukamiria,NA,Ucayali,Tupí-guaraní,NA,11.307,NA,Peru
+Madija,NA,Ucayali,Arawa,NA,417,NA,Peru
+Sharanahua,NA,Ucayali,Pano,NA,486,NA,Peru
+Shipibo-konibo,NA,Ucayali,Pano,NA,22.517,NA,Peru
+Yaminahua,NA,Ucayali,Pano,NA,600,NA,Peru
+Yine,NA,Ucayali,Arawak,NA,3.261,NA,Peru
+Yora (nahua),NA,Ucayali,Pano,NA,170,NA,Peru

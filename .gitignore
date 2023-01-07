@@ -1,6 +1,5 @@
 # gitignore 
 
-*.csv
 *.xls
 
 /cache-directory/
