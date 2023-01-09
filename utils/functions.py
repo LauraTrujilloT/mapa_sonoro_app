@@ -1,5 +1,6 @@
 from dash import Dash, dcc, html
 import dash_bootstrap_components as dbc
+from dash_iconify import DashIconify
 
 def formatter_2_decimals(x):
     '''returns float with 2 decimals
@@ -30,12 +31,17 @@ def drawFigure(id_='fig-default'):
 
 def drawInfo(text='Some help text'):
     return html.Div([
-        html.I(className="fas fa-question-circle fa-lg", id="target"),
-        dbc.Tooltip("Some help text", target="target"),
+        html.I(DashIconify(
+                            icon="ph:info",
+                            #color=dmc.theme.DEFAULT_COLORS["blue"][6],
+                            width=20,
+                        ), id="target"),
+        dbc.Tooltip(text, target="target"),
     ],
-    className="text-muted",style = {
-                    #'background-color':'red',
-                    'align-items': 'center',
-                    'padding-top' : '5px',
-                    'height' : 'auto'}
+    className="text-muted",
+    style = {
+            #'background-color':'red',
+            'align-items': 'center',
+            'padding-top' : '5px',
+            'height' : 'auto'}
 )
