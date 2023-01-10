@@ -10,7 +10,7 @@ server = flask.Flask(__name__) # define flask app.server
 
 app = dash.Dash(
     __name__,
-    title="Redescubriendo el Higgs - Dash App",
+    title="Sound Map Dash App",
     server=server,
     suppress_callback_exceptions=True, 
     external_stylesheets=[
