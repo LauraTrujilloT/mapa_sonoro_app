@@ -20,18 +20,15 @@ header_metrics = dbc.Row([
                                     html.H5("Colombia Metrics"),
                                     html.Hr(),
                             ],  style={'textAlign': 'center'}),
-                        ])
+                        ],)
 metrics = dbc.Row([
-                    dbc.Col([
-                            drawText(),
-                            ], width=4),
-                    dbc.Col([
-                            drawText(),
-                            ], width=4),
-                    dbc.Col([
-                            drawText(),
-                            ], width=4),
-                ])
+                dbc.Card(
+                    dcc.Graph(id='hablantes-indicator',
+                      className="h-100"
+                    ),
+                    style={'height':'100%'},
+                    className="p-0",
+                    )],  )
 table = dbc.Row([
                 dbc.Col([
                     html.Label("This is my Table Title",style={'text':'center'}),
@@ -54,6 +51,14 @@ table = dbc.Row([
                             },)
                     ], style={'height':'100%', 'textAlign':'center'}),
                 ])
+col_map = dbc.Row([
+                dbc.Card(
+                    dcc.Graph(id='col-map-graph',
+                      className="h-100"
+                    ),
+                    style={'height':'100%'},
+                    className="p-0",
+                    )], )
 controls = dbc.Row([
     dbc.Col([
         dmc.Accordion([
@@ -119,8 +124,13 @@ layout = html.Div([
     dbc.Card([
         dbc.CardBody([
             dbc.Row([
-                dbc.Col(dcc.Graph(id="col-map-graph"),
-                md=7),
+                dbc.Col([
+                    #dcc.Graph(id="col-map-graph"),
+                    col_map,
+                ],
+                    md=7,
+                    style={'height':'100%'}
+                ),
                 dbc.Col([
                         header_metrics,
                         metrics,
@@ -128,6 +138,6 @@ layout = html.Div([
                         table
                 ], md=5)
             ], align='center'),
-        ]),
+        ],),
     ], body=True)
 ])
