@@ -10,28 +10,28 @@ col_df = col_dataframe()
 header = dbc.Container([
                     dbc.Row([
                         dbc.Col(
-                            html.H1("Native Languages of Colombia"),
+                            html.H1("Soundmap of Colombia"),
                             style={'textAlign':'right','padding' : '0px'}),
                         dbc.Col(drawInfo(), width=3),
                         ], className='g-0'),
                     ], fluid=True)
 header_metrics = dbc.Row([
                             dbc.Col([
-                                    html.H5("Colombia Metrics"),
+                                    html.H3("Colombia Metrics"),
                                     html.Hr(),
                             ],  style={'textAlign': 'center'}),
                         ],)
 metrics = dbc.Row([
                 dbc.Card(
                     dcc.Graph(id='hablantes-indicator',
-                      className="h-100"
+                      #className="h-100"
                     ),
-                    style={'height':'100%'},
+                    style={'height':'100%','border':'none'},
                     className="p-0",
-                    )],  )
+                    )],)
 table = dbc.Row([
                 dbc.Col([
-                    html.Label("This is my Table Title",style={'text':'center'}),
+                    html.H3("List of Native Languages",style={'text':'center', }),
                     dash_table.DataTable(
                             id='col-table', 
                             #export_format="csv",
@@ -56,7 +56,7 @@ col_map = dbc.Row([
                     dcc.Graph(id='col-map-graph',
                       className="h-100"
                     ),
-                    style={'height':'100%'},
+                    style={'height':'100%', 'border':'none'},
                     className="p-0",
                     )], )
 controls = dbc.Row([

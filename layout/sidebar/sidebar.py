@@ -63,7 +63,7 @@ sidebar = html.Div(
             dbc.Nav(
                 [
                     dbc.NavLink("Home", href=home_page_location, active="exact"),
-                    dbc.NavLink("Mapa Sonoro Colombia", href=col_page_location, active="exact"),
+                    dbc.NavLink("Colombia Sound Map", href=col_page_location, active="exact"),
                     #dbc.NavLink("GDP", href=gdp_page_location, active="exact"),
                     #dbc.NavLink("Iris", href=iris_page_location, active="exact"),
                     #dbc.NavLink("HYY Analysis", href=hyy_page_location, active="exact"),

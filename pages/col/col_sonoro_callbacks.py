@@ -37,17 +37,24 @@ def make_col_map(checked, family, depto):
                         lon=col_df["municipio_longitud"].astype(float),     
                         color=col_df["vitalidad"], 
                         size=abs(col_df['n_hablantes'] - mean ) / std,
-                        mapbox_style='carto-positron',
+                        mapbox_style='white-bg',#'carto-positron',
                         size_max=45,
                         zoom=5,
                         height=900,
-                        center = {"lat": 4.7110, "lon": -74.0421},
+                        center = {"lat": 4.0, "lon": -72.5},
+                        opacity=1,
                         color_discrete_map={
-                                            'En peligro':'#DC3535',
-                                            'En peligro de extinción':'#DC3535',
+                                            'En peligro':'rgb(271, 71, 130)',
+                                            'En peligro de extinción':'rgb(271, 71, 130)',
                                             'Vulnerable':'#FFE15D',
-                                            'En situación crtica':'#F49D1A'
+                                            'En situación critica':'#FFE15D'
                                     }
+                        # color_discrete_map={
+                        #                     'En peligro':'rgb(271, 71, 130)',#'#FB2576',
+                        #                     'En peligro de extinción':'rgb(271, 71, 130)',
+                        #                     'Vulnerable':'rgb(120,212,185)',
+                        #                     'En situación crtica':'#FFE15D'  
+                        # }
                         )
      
     choropleth_col = px.choropleth_mapbox(
@@ -55,21 +62,31 @@ def make_col_map(checked, family, depto):
                             geojson=deptos, 
                             featureidkey='properties.DPTO',
                             locations='properties.DPTO', 
-                            mapbox_style="carto-positron",
+                            mapbox_style='white-bg',#"carto-positron",
                             zoom=5, 
-                            center = {"lat": 4.7110, "lon": -74.0421},
-                            opacity=0.55,
+                            center = {"lat": 4.0, "lon": -72.5},
+                            #opacity=0.55,
+                            opacity=1.,
                             #width=700,
                             height=900,
-                            color_discrete_sequence=['#B2B2B2']
+                            color_discrete_sequence=['rgba(19, 32, 56, 1)']#['#B2B2B2']
                           )
+    choropleth_col.update_traces(
+        hoverinfo='skip',
+        hovertemplate=None,
+        marker_line_width=0.1, 
+        #marker_opacity=0.8, 
+        marker_line_color='white')
     col_fig.add_trace(choropleth_col.data[0])
     for i, frame in enumerate(col_fig.frames):
         col_fig.frames[i].data += (choropleth_col.frames[i].data[0],)
 
+    #col_fig.update_traces(marker_line_width=0)
     col_fig.update_layout(
         margin={"r": 0, "t": 0, "l": 0, "b": 0}, 
         #margin=dict(l=20, r=20, t=20, b=20),
+        #paper_bgcolor='black',
+        #plot_bgcolor="#323130",
         showlegend=False)
 
     col_table = col_df[['departamento', 'nombre_lengua','vitalidad', 'n_hablantes','n_habitantes']].\
@@ -117,7 +134,8 @@ def update_indicators(checked, family, depto):
     layout = go.Layout(
                     #paper_bgcolor='rgb(0,0,0)',
                     margin=dict(l=20, r=20, t=20, b=20),
-                    autosize=False,
+                    autosize=True,
+                    #height=100
                     )
     fig = go.Figure(data = [trace1, trace2, trace3], layout = layout)
 
