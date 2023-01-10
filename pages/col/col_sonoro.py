@@ -1,5 +1,4 @@
-from dash import html
-from dash import dcc
+from dash import html, dcc, dash_table
 from pages.col.col_data import col_dataframe
 import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
@@ -35,8 +34,25 @@ metrics = dbc.Row([
                 ])
 table = dbc.Row([
                 dbc.Col([
-                        drawFigure(id_='sonoro-table')
-                    ]),
+                    html.Label("This is my Table Title",style={'text':'center'}),
+                    dash_table.DataTable(
+                            id='col-table', 
+                            #export_format="csv",
+                            page_action='native',
+                            page_size=10,
+                            style_as_list_view=True,
+                            fixed_rows={'headers': True},
+                            style_table={'height': '400px', 'overflowY': 'auto'},
+                            style_cell={
+                                'fontFamily': 'Open Sans',
+                                'textAlign': 'left',
+                                'height': '60px',
+                                'padding': '2px 22px',
+                                'whiteSpace': 'inherit',
+                                'overflow': 'hidden',
+                                'textOverflow': 'ellipsis',
+                            },)
+                    ], style={'height':'100%', 'textAlign':'center'}),
                 ])
 controls = dbc.Row([
     dbc.Col([

@@ -17,12 +17,12 @@ from pages.col import col_sonoro
 def render_page_content(pathname):
     if pathname == home_page_location:
         return home.layout
-    elif pathname == gdp_page_location:
-        return gdp.layout
-    elif pathname == iris_page_location:
-        return iris.layout
-    elif pathname == hyy_page_location:
-        return hyy.layout
+    #elif pathname == gdp_page_location:
+    #    return gdp.layout
+    #elif pathname == iris_page_location:
+    #    return iris.layout
+    #elif pathname == hyy_page_location:
+    #    return hyy.layout
     elif pathname == col_page_location:
         return col_sonoro.layout
     # If the user tries to reach a different page, return a 404 message
