@@ -9,27 +9,33 @@ from pages.col.col_data import col_dataframe, col_geojson_dataframe
     Output('col-table', 'data'),
     Output('col-table', 'columns'),
     [
-    Input('test-switch', 'checked'),
+    Input('lengua-multiselector', 'value'),
     Input('family-multiselector', 'value'),
-    Input('depto-multiselector', 'value')
+    Input('depto-multiselector', 'value'),
+    Input('hablantes-slider','value')
     ]
 )
-def make_col_map(checked, family, depto):
+def make_col_map(lengua,family, depto, speakers_threshold):
     '''
     '''
     col_geojson_, deptos = col_geojson_dataframe()
-    if checked:
-        col_df = col_dataframe()
-    else:
-        col_df = col_dataframe()
+    col_df = col_dataframe()
+    if lengua:
+        col_df = col_df[col_df['nombre_lengua'].isin(lengua)]
     if family:
         col_df = col_df[col_df['familia_linguistica'].isin(family)]
     if depto:
         col_df = col_df[col_df['departamento'].isin(depto)]
         col_geojson_ = col_geojson_[col_geojson_['properties.NOMBRE_DPT'].isin(depto)]
- 
-    mean = col_df['n_hablantes'].mean()
-    std = col_df['n_hablantes'].std()
+    if speakers_threshold:
+        col_df = col_df[col_df['n_hablantes'] <= speakers_threshold]
+    
+    if len(col_df['nombre_lengua'].unique()) > 1:
+        mean = col_df['n_hablantes'].mean()
+        std = col_df['n_hablantes'].std() 
+    else:
+        mean = col_df['n_hablantes'].mean()
+        std = 1      
     
     col_fig = px.scatter_mapbox(
                         col_df.dropna(), 
@@ -101,12 +107,11 @@ def make_col_map(checked, family, depto):
     #Output('habitantes-indicator', 'figure'),
     #Output('lenguas-indicator', 'figure'),
     [
-    Input('test-switch', 'checked'),
     Input('family-multiselector', 'value'),
     Input('depto-multiselector', 'value')
     ]
 )
-def update_indicators(checked, family, depto):
+def update_indicators(family, depto):
     '''
     '''
     col_df = col_dataframe()
