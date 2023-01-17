@@ -85,12 +85,14 @@ display_controls = dbc.Col([
                                     dbc.Row([
                                         dbc.Col([
                                             dmc.Switch(
-                                                id='population-switch',
-                                                label='Colombia Population'
+                                                id='carto-switch',
+                                                label='Show Cartography',
+                                                checked=False,
                                             ),
                                             dmc.Switch(
                                                 id='z-switch',
-                                                label='Z Normalization'
+                                                label='Z Normalization',
+                                                checked=True
                                             )
                                         ]),
                                         dbc.Col([
@@ -122,13 +124,13 @@ controls = dbc.Row([
                             width=20,
                         ),
                     ),
-                    dmc.AccordionPanel(
+                    dmc.AccordionPanel([
                         dbc.Row([
                             dbc.Col([
                                 dmc.MultiSelect(
                                     label="Select Specific Language",
                                     id='lengua-multiselector',
-                                    data=[lengua for lengua in col_df['nombre_lengua'].unique()],
+                                    data=[lengua for lengua in col_df['nombre_lengua'].sort_values(ascending=True).unique()],
                                     style={"width": 200, "marginBottom": 10},
                                     clearable=True,
                                     searchable=True,
@@ -140,7 +142,7 @@ controls = dbc.Row([
                                 dmc.MultiSelect(
                                     label="Select Linguistic Family",
                                     id='family-multiselector',
-                                    data=[family for family in col_df['familia_linguistica'].unique()],
+                                    data=[family for family in col_df['familia_linguistica'].sort_values(ascending=True).unique()],
                                     style={"width": 200, "marginBottom": 10},
                                     clearable=True,
                                     searchable=True,
@@ -152,7 +154,7 @@ controls = dbc.Row([
                                 dmc.MultiSelect(
                                     label="Select State",
                                     id='depto-multiselector',
-                                    data=[{'value':depto, 'label':depto.capitalize()} for depto in col_df['departamento'].unique()],
+                                    data=[{'value':depto, 'label':depto.capitalize()} for depto in col_df['departamento'].sort_values(ascending=True).unique()],
                                     style={"width": 200, "marginBottom": 10},
                                     clearable=True,
                                     searchable=True,
@@ -160,10 +162,13 @@ controls = dbc.Row([
 
                                 ),
                             ]),
+                        ]),
+                        dbc.Row([
                             dbc.Col([
-                                dmc.Text('Select Threshold #Speakers'),
+                                dmc.Text('Select Max Total of Speakers'),
                                 dmc.Slider(
                                     id='hablantes-slider',
+                                    style={'marginBottom':10},
                                     max=col_df.n_hablantes.max(),
                                     min=col_df.n_hablantes.min(),
                                     value=col_df.n_hablantes.max(),
@@ -173,9 +178,9 @@ controls = dbc.Row([
                                         {'value':col_df.n_hablantes.max(), 'label':f'{max_hablantes:,}'}
                                     ]
                                 ),
-                            ])
+                            ]),
                         ]),
-                    )
+                ])
             ], value="customization")
         ]),
     ], ),
@@ -184,8 +189,18 @@ controls = dbc.Row([
             dmc.Menu([
                         dmc.MenuTarget(dmc.Button('Menu',variant="light")),
                         dmc.MenuDropdown([
-                        dmc.MenuItem(
-                                    'Download Data',
+                            dmc.MenuItem(
+                                        'Github Repository',
+                                        href="https://www.github.com/LauraTrujilloT",
+                                        target="_blank",
+                                        ),
+                            dmc.MenuItem(
+                                        'Download Data',
+                                        href="https://www.github.com/LauraTrujilloT",
+                                        target="_blank",
+                                        ),
+                            dmc.MenuItem(
+                                    'Help',
                                     href="https://www.github.com/LauraTrujilloT",
                                     target="_blank",
                                     )

@@ -13,7 +13,11 @@ col_geojson_path ="data/colombia.json"
 
 @cache.memoize(timeout=TIMEOUT)
 def col_dataframe():
-    return pd.read_csv(col_data_path)
+    col_df = pd.read_csv(col_data_path)
+    col_df['vitalidad'] = col_df['vitalidad'].replace(['En peligro'],'Critically Endangered')
+    col_df['vitalidad'] = col_df['vitalidad'].replace(['En peligro de extinción'], 'Endangered')
+    col_df['vitalidad'] = col_df['vitalidad'].replace(['Vulnerable','En situación critica'], 'Vulnerable')
+    return col_df
 
 @cache.memoize(timeout=TIMEOUT)
 def col_geojson_dataframe():
@@ -23,3 +27,9 @@ def col_geojson_dataframe():
     col_geojson = pd.json_normalize(deptos['features'])
     col_geojson = col_geojson.assign(pais='Colombia')
     return col_geojson, deptos
+
+
+## anotaciones caro
+# - porcentajes speakers ; locals
+# explicar diff --> non speakers likely to speak spanish
+# departamentos -> how many states don't have native languages (la fuente de datos no traia info de tales deptos)
