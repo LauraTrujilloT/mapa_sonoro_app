@@ -30,6 +30,4 @@ def col_geojson_dataframe():
 
 
 ## anotaciones caro
-# - porcentajes speakers ; locals
-# explicar diff --> non speakers likely to speak spanish
 # departamentos -> how many states don't have native languages (la fuente de datos no traia info de tales deptos)

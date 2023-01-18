@@ -14,7 +14,9 @@ half_hablantes=int(col_df.n_hablantes.max()/2)
 max_hablantes = int(col_df.n_hablantes.max())
 
 ## Colors
-map_colors = ['rgb(19, 32, 56)', 'rgb(50, 68, 83)', 'rgb(81, 102, 110)', 'rgb(112, 135, 137)', 'rgb(207, 216, 212)']
+map_colors = ['rgb(19, 32, 56)', 'rgb(50, 68, 83)', 'rgb(81, 102, 110)', 'rgb(112, 135, 137)', 'rgb(207, 216, 212)',
+                'rgb(158, 160, 170)', '#8daad6', 'rgb(255,255,255)', '#4E5D6C',
+                'rgb(231,231,231)','rgb(226,233,244)']
 
 ## Colombia SoundMap Layout Components
 
@@ -62,11 +64,14 @@ table = dbc.Row([
                                 'textOverflow': 'ellipsis',
                             },)
                     ], style={'height':'100%', 'textAlign':'center'}),
+                    dmc.Text("Data Latest Update: July 15, 2022", color='gray',weight=500),
+                    dmc.Text("* Data obtained from Datos Abiertos Colombia (datos.gov.co)", size='md'),
+                    dmc.Text("** non-speaker locals are assumed to speak Spanish", size='md')
                 ])
 col_map = dbc.Row([
                 dbc.Card(
                     dcc.Graph(id='col-map-graph',
-                      className="h-100"
+                      style={'height':'100%'}
                     ),
                     style={'height':'100%', 'border':'none'},
                     className="p-0",

@@ -1,6 +1,8 @@
 from dash import html, dcc, dash_table
 import dash_bootstrap_components as dbc
 from components.col_components import *
+import dash_mantine_components as dmc
+
 
 layout = html.Div([
     header,
@@ -25,5 +27,11 @@ layout = html.Div([
                 ], md=5)
             ], align='center'),
         ],),
-    ], body=True)
+    ], body=True),
+    dmc.Footer(
+        height=60,
+        fixed=True,
+        children=[dmc.Text("A nice footer")],
+        style={"backgroundColor": "#f8f9fa"},
+    )
 ])

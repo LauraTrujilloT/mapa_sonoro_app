@@ -23,6 +23,10 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_carto,
     '''
     col_geojson_, deptos = col_geojson_dataframe()
     col_df = col_dataframe()
+    speakers_total = col_df['n_hablantes'].sum()
+    locals_total = col_df['n_habitantes'].sum()
+    col_df['pct_hablantes'] = (col_df['n_hablantes'] * 100) / speakers_total
+    col_df['pct_habitantes'] = (col_df['n_habitantes'] * 100) / locals_total
     if lengua:
         col_df = col_df[col_df['nombre_lengua'].isin(lengua)]
     if family:
@@ -33,7 +37,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_carto,
     if speakers_threshold:
         col_df = col_df[col_df['n_hablantes'] <= speakers_threshold]
     if not colormap:
-        colormap = 'rgba(19, 32, 56, 1)'
+        colormap = 'rgba(255, 255, 255, 0.8)'
     if not show_carto:
         show_carto = 'white-bg'
     else:
@@ -46,53 +50,56 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_carto,
         bubble_max = 45
     elif z_switch == False:
         bubble_size = col_df['lengua_ratio']
-        bubble_max = 15   
+        bubble_max = 15  
     
-    col_fig = px.scatter_mapbox(
+    col_fig = px.scatter_geo(
                         col_df.dropna(), 
                         lat=col_df["municipio_latitud"].astype(float), 
                         lon=col_df["municipio_longitud"].astype(float),     
                         color=col_df["vitalidad"], 
                         size=bubble_size,
-                        mapbox_style=show_carto,#'carto-positron',
                         size_max=bubble_max,
-                        zoom=5,
-                        height=900,
+                        height=1000,
                         center = {"lat": 4.0, "lon": -72.5},
-                        opacity=1,
+                        opacity=1.,
+                        scope='south america',
                         color_discrete_map={
-                                            'Critically Endangered':'rgb(271, 71, 130)',
+                                            'Critically Endangered':'rgb(250, 87, 98)',
                                             'Vulnerable':'#FFE15D',
                                             'Endangered':'rgb(227,137,56)'
                                     },
                         custom_data=[col_df["n_hablantes"], col_df['n_habitantes'], 
-                            col_df['familia_linguistica'], col_df['nombre_lengua']],
-                        )
-     
-    choropleth_col = px.choropleth_mapbox(
-                            col_geojson_, 
-                            geojson=deptos, 
-                            featureidkey='properties.DPTO',
-                            locations='properties.DPTO', 
-                            mapbox_style=show_carto,#"carto-positron",
-                            zoom=5, 
-                            center = {"lat": 4.0, "lon": -72.5},
-                            opacity=1.,
-                            height=900,
-                            color_discrete_sequence=[colormap]#['#B2B2B2']
-                          )
+                            col_df['familia_linguistica'], col_df['nombre_lengua'],
+                            col_df['pct_hablantes'], col_df['pct_habitantes']
+                            ],
+                    )
+    
+    choropleth_col = px.choropleth(
+                                col_geojson_,
+                                geojson=deptos,
+                                locations='properties.DPTO',
+                                featureidkey='properties.DPTO',
+                                #projection='mercator',
+                                height=1000,
+                                color_discrete_sequence=[colormap]
+                            )
     choropleth_col.update_traces(
         hoverinfo='skip',
         hovertemplate=None,
-        marker_line_width=0.1,
-        marker_line_color='white')
+        marker_line_width=0.5,
+        marker_line_color='#8daad6')
+    choropleth_col.update_geos(fitbounds='locations',visible=False)
+    col_fig.update_geos(fitbounds='locations', visible=False, bgcolor='#f8f9fa')
+
     col_fig.update_traces(
     hovertemplate="<br>".join([
         #"ColX: %{x}",
         #"ColY: %{y}",
         "<b> %{customdata[2]} Family</b> - %{customdata[3]}",
         "<b>Speakers:</b> %{customdata[0]:,}",
+        "<b>%Speakers:</b> %{customdata[5]:.2}%", 
         "<b>Locals:</b> %{customdata[1]:,}",
+        "<b>%Locals</b> %{customdata[4]:.2}%",
         #"Col3: %{customdata[2]}",
         ])
     )
@@ -102,6 +109,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_carto,
 
     col_fig.update_layout(
         margin={"r": 0, "t": 0, "l": 0, "b": 0}, 
+        #title="Native Languages in Colombia",
         showlegend=False,
         hoverlabel={'font':{'size':15}})
 
@@ -134,7 +142,7 @@ def update_indicators(family, depto):
         title={'text': "Speakers", 'font':{'size':15}})
     trace2 = go.Indicator(
         mode="number",    
-        value=col_df.nombre_lengua.count(),    
+        value=col_df.nombre_lengua.nunique(),    
         domain={'x': [0.33, 0.66], 'y': [0., 1.]},  
         number={'font':{'size':35}},  
         title={'text': "Native Languages", 'font':{'size':15}})
