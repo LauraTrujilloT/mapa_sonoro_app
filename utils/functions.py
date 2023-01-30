@@ -20,23 +20,24 @@ def drawText():
                             ])
                         ),
                     ])
-def drawFigure(id_='fig-default'):
+def drawFigure(id_='fig-default', title_=None):
     return  html.Div([
-        dbc.Card(
+        dbc.Card([
+            dbc.CardHeader(title_),
             dbc.CardBody([
                 dcc.Graph(id=id_) 
             ])
-        ),  
+        ]),  
     ])
 
-def drawInfo(text='Some help text'):
+def drawInfo(text='Some help text', id_='first-help'):
     return html.Div([
         html.I(DashIconify(
                             icon="ph:info",
                             #color=dmc.theme.DEFAULT_COLORS["blue"][6],
                             width=20,
-                        ), id="target"),
-        dbc.Tooltip(text, target="target"),
+                        ), id=id_),
+        dbc.Tooltip(text, target=id_),
     ],
     className="text-muted",
     style = {

@@ -15,11 +15,11 @@ import numpy as np
     Input('depto-multiselector', 'value'),
     Input('hablantes-slider','value'),
     Input('colormap-picker','value'),
-    Input('carto-switch', 'checked'),
     Input('z-switch','checked'),
+    Input('legend-switch', 'checked')
     ]
 )
-def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats, z_switch):
+def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, legend_switch):
     '''
     Return Plotly figure (map + scatter)
     '''
@@ -40,10 +40,6 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
         col_df = col_df[col_df['n_hablantes'] <= speakers_threshold]
     if not colormap:
         colormap = 'rgb(226,233, 244)'
-    if not show_stats:
-        show_stats =  True
-    else:
-        show_stats = False
     
     if (len(col_df['nombre_lengua'].unique()) < 2) or (z_switch == True) :
         mean = col_df['n_hablantes'].mean()
@@ -72,7 +68,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
                                     },
                         custom_data=[col_df["n_hablantes"], col_df['n_habitantes'], 
                             col_df['familia_linguistica'], col_df['nombre_lengua'],
-                            col_df['pct_hablantes'], col_df['pct_habitantes']
+                            col_df['pct_hablantes'], col_df['pct_habitantes'], bubble_size
                             ],
                     )
     
@@ -81,7 +77,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
                                 geojson=deptos,
                                 locations='properties.DPTO',
                                 featureidkey='properties.DPTO',
-                                #projection='mercator',
+                                projection='mercator',
                                 height=1000,
                                 color_discrete_sequence=[colormap]
                             )
@@ -100,7 +96,9 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
                         "<b>%Speakers:</b> %{customdata[5]:.2}%", 
                         "<b>Locals:</b> %{customdata[1]:,}",
                         "<b>%Locals</b> %{customdata[4]:.2}%",
-                        ])
+                        "<b>Z Norm</b> %{customdata[6]:.2}"
+                        ]),
+                    marker_sizemin=4
     )
     col_fig.add_trace(choropleth_col.data[0])
     for i, frame in enumerate(col_fig.frames):
@@ -114,7 +112,13 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
             'y':0.98,
             'xanchor':'center'
             },
-        showlegend=True,
+        showlegend=legend_switch,
+        legend={
+            'orientation':'h',
+            'font': {'size':14},
+            'title':None,
+            'xanchor':'left'
+        },
         hoverlabel={
             'font':{'size':15},
             'bgcolor':'rgba(255,255,255,0.75)'
@@ -137,11 +141,10 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap, show_stats,
     Input('depto-multiselector', 'value'),
     Input('hablantes-slider','value'),
     Input('colormap-picker','value'),
-    Input('carto-switch', 'checked'),
     Input('z-switch','checked'),
     ]
 )
-def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, show_stats, z_switch):
+def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, z_switch):
     '''
     Return Plotly figure for Bubble legend
     '''
@@ -162,10 +165,6 @@ def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, show_
         col_df = col_df[col_df['n_hablantes'] <= speakers_threshold]
     if not colormap:
         colormap = 'rgb(226,233, 244)'
-    if not show_stats:
-        show_stats =  True
-    else:
-        show_stats = False
     
     if (len(col_df['nombre_lengua'].unique()) < 2) or (z_switch == True) :
         mean = col_df['n_hablantes'].mean()
@@ -202,12 +201,13 @@ def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, show_
                             hovertemplate=None, 
                             hoverinfo='skip', 
                             textposition='bottom center',
+                            marker_sizemin=4
                             )
     bubble_fig.update_layout(
-                            title=dict(text=legend_title, x=0.1, y=0.5),
+                            title=dict(text=legend_title, x=0., y=0.8),
                             xaxis=dict(showgrid=False, visible=False),
                             yaxis=dict(showgrid=False, visible=False),
-                            margin=dict(t=0,b=0,l=250,r=0),
+                            margin=dict(t=0,b=0,l=20,r=250),
                             paper_bgcolor='#f8f9fa',
                             plot_bgcolor='#f8f9fa'
                         )
@@ -234,19 +234,19 @@ def update_indicators(family, depto):
         value=col_df.n_hablantes.sum(),    
         domain={'x': [0., 0.33], 'y': [0.0, 1.]},  
         number={'valueformat':',r', 'font':{'size':35}},  
-        title={'text': "Speakers", 'font':{'size':15}})
+        title={'text': "Total Speakers", 'font':{'size':15}})
     trace2 = go.Indicator(
         mode="number",    
         value=col_df.nombre_lengua.nunique(),    
         domain={'x': [0.33, 0.66], 'y': [0., 1.]},  
         number={'font':{'size':35}},  
-        title={'text': "Native Languages", 'font':{'size':15}})
+        title={'text': "Languages", 'font':{'size':15}})
     trace3 = go.Indicator(
         mode="number",    
         value=col_df.n_habitantes.sum(),    
         domain={'x': [0.66, 1.0], 'y': [0., 1.00]},  
         number={'valueformat':',r', 'font':{'size':35}}, 
-        title={'text': "Locals", 'font':{'size':15}})
+        title={'text': "Total Locals", 'font':{'size':15}})
 
     # layout and figure production
     layout = go.Layout(
@@ -258,3 +258,18 @@ def update_indicators(family, depto):
     fig = go.Figure(data = [trace1, trace2, trace3], layout = layout)
 
     return fig
+
+@app.callback(
+    Output('stats-section', 'style'),
+    [
+    Input('stats-switch', 'checked'),
+    ]
+)
+def display_stats_page(hide_switch):
+    '''
+        Shows/Hides Stats Section
+    '''
+    if hide_switch:
+        return {'display':'block'}
+    else:
+        return {'display':'none'}

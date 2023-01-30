@@ -96,9 +96,9 @@ display_controls = dbc.Col([
                                     dbc.Row([
                                         dbc.Col([
                                             dmc.Switch(
-                                                id='carto-switch',
-                                                label='Show Stats',
-                                                checked=False,
+                                                id='legend-switch',
+                                                label='Show Legend',
+                                                checked=True,
                                             ),
                                             dmc.Switch(
                                                 id='z-switch',
@@ -183,11 +183,20 @@ controls = dbc.Row([
                                     max=col_df.n_hablantes.max(),
                                     min=col_df.n_hablantes.min(),
                                     value=col_df.n_hablantes.max(),
+                                    size=2,
                                     marks=[
                                         {'value':col_df.n_hablantes.min(), 'label': f'{min_hablantes:,}'},
                                         {'value':col_df.n_hablantes.max()/2, 'label':f'{half_hablantes:,}'},
                                         {'value':col_df.n_hablantes.max(), 'label':f'{max_hablantes:,}'}
-                                    ]
+                                    ],
+                                    py='xl',
+                                    #labelAlwaysOn=True,
+                                    styles=dict(
+                                                thumb=dict(backgroundColor='white',borderWidth=2, height=16, width=16, boxShadow='sm'),
+                                                track=dict(backgroundColor='black'),
+                                                mark=dict(transform='translateX(-3px) translateY(-2px)',backgroundColor='white', borderRadius=6, width=6, height=6),
+                                                markLabel=dict(fontsize='xs', marginBottom=5, marginTop=0),
+                                            )
                                 ),
                             ]),
                         ]),
@@ -219,3 +228,40 @@ controls = dbc.Row([
                     ])
             ],md=2 , style={'align-items':'center',}, align='center')
     ],justify='center', align="center")
+
+stats_components = dbc.Container([
+                    dbc.Row([
+                        dbc.Col([
+                            dmc.Switch(
+                                id='stats-switch',
+                                label='Show Stats Section',
+                            )
+                        ], md=4),
+                    ]),
+                    html.Br(),
+                    dbc.Card([
+                        dbc.CardHeader([
+                            dbc.Row([
+                                dbc.Col(drawInfo(text="This Section provides a descriptive Analysis of Native Languages in Colombia", id_='other-help'), md=2, style={'width':'5%'}), 
+                                dbc.Col(dmc.Title('Stats Section', order=3), style={'padding':'0px'}),
+                                
+                            ]),
+                        ]),
+                        dbc.CardBody([
+                            dbc.Row([
+                                dbc.Col([
+                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Vertical Bar Chart)')
+                                ], md=6),
+                                dbc.Col([
+                                    drawFigure(id_='family-lineplot', title_='Most Endangered Native Languages in Colombia (Suggestions: Vertical Bar Chart)')
+                                ], md=6)
+                            ]),
+                            html.Br(),
+                            dbc.Row([
+                                dbc.Col(drawFigure(id_='top-deptos-plot', title_='Diversity: Top 3 States'), md=4),
+                                dbc.Col(drawFigure(id_='risk-pie', title_='Native Languages by Risk Status'), md=4),
+                                dbc.Col(drawFigure(id_='top-lang-plot', title_='Top 5 Linguistic Families'), md=4),
+                            ]),
+                        ])
+                    ], id='stats-section', style={'display':'none'})
+])

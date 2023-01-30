@@ -13,11 +13,8 @@ layout = html.Div([
         dbc.CardBody([
             dbc.Row([
                 dbc.Col([
-                    #dcc.Graph(id="col-map-graph"),
                     col_map,
-                ],
-                    md=7,
-                    style={'height':'100%'}
+                    ],md=7, style={'height':'100%'}
                 ),
                 dbc.Col([
                         header_metrics,
@@ -26,6 +23,8 @@ layout = html.Div([
                         table
                 ], md=5)
             ], align='center'),
+            html.Br(),
+            stats_components
         ],),
     ], body=True),
     dmc.Footer(
