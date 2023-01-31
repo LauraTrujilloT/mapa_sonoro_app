@@ -15,7 +15,7 @@ col_geojson_path ="data/colombia.json"
 def col_dataframe():
     col_df = pd.read_csv(col_data_path)
     col_df['vitalidad'] = col_df['vitalidad'].replace(['En peligro'],'Critically Endangered')
-    col_df['vitalidad'] = col_df['vitalidad'].replace(['En peligro de extinción'], 'Endangered')
+    col_df['vitalidad'] = col_df['vitalidad'].replace(['En peligro de extinción'], 'Critically Endangered')
     col_df['vitalidad'] = col_df['vitalidad'].replace(['Vulnerable','En situación critica'], 'Vulnerable')
     return col_df
 

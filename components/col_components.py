@@ -1,4 +1,5 @@
 '''
+    Components for the layout-Page Colombia Sound map
 '''
 import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
@@ -26,7 +27,7 @@ header = dbc.Container([
                         dbc.Col(
                             html.H1("Soundmap of Colombia"),
                             style={'textAlign':'right','padding' : '0px'}),
-                        dbc.Col(drawInfo(), width=3),
+                        dbc.Col(drawInfo(text='Basic interective dashboard that describes Native Languages in Colombia and their vulnerability as of 2022'), width=3),
                         ], className='g-0'),
                     ], fluid=True)
 header_metrics = dbc.Row([
@@ -242,7 +243,7 @@ stats_components = dbc.Container([
                     dbc.Card([
                         dbc.CardHeader([
                             dbc.Row([
-                                dbc.Col(drawInfo(text="This Section provides a descriptive Analysis of Native Languages in Colombia", id_='other-help'), md=2, style={'width':'5%'}), 
+                                dbc.Col(drawInfo(text="This Section provides a Descriptive Analysis of Native Languages in Colombia", id_='other-help'), md=2, style={'width':'5%'}), 
                                 dbc.Col(dmc.Title('Stats Section', order=3), style={'padding':'0px'}),
                                 
                             ]),
@@ -250,17 +251,17 @@ stats_components = dbc.Container([
                         dbc.CardBody([
                             dbc.Row([
                                 dbc.Col([
-                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Vertical Bar Chart)')
+                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Vertical Bar Chart)', style_={'border':'none'})
                                 ], md=6),
                                 dbc.Col([
-                                    drawFigure(id_='family-lineplot', title_='Most Endangered Native Languages in Colombia (Suggestions: Vertical Bar Chart)')
+                                    drawFigure(id_='family-endangered-plot', title_='Most Endangered Native Languages in Colombia', style_={'border':'none'})
                                 ], md=6)
                             ]),
                             html.Br(),
                             dbc.Row([
-                                dbc.Col(drawFigure(id_='top-deptos-plot', title_='Diversity: Top 3 States'), md=4),
-                                dbc.Col(drawFigure(id_='risk-pie', title_='Native Languages by Risk Status'), md=4),
-                                dbc.Col(drawFigure(id_='top-lang-plot', title_='Top 5 Linguistic Families'), md=4),
+                                dbc.Col(drawFigure(id_='top-deptos-plot', title_='Diversity: Top 3 States', style_={'border':'none'}), md=4),
+                                dbc.Col(drawFigure(id_='risk-pie', title_='Native Languages by Risk Status', style_={'border':'none'}), md=4),
+                                dbc.Col(drawFigure(id_='top-lang-plot', title_='Top 5 Linguistic Families', style_={'border':'none'}), md=4),
                             ]),
                         ])
                     ], id='stats-section', style={'display':'none'})

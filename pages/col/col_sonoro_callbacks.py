@@ -1,6 +1,7 @@
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import plotly.express as px
+from plotly.subplots import make_subplots
 from app import app
 from pages.col.col_data import col_dataframe, col_geojson_dataframe
 import numpy as np
@@ -9,6 +10,7 @@ import numpy as np
     Output('col-map-graph', 'figure'),
     Output('col-table', 'data'),
     Output('col-table', 'columns'),
+    Output('z-switch', 'label'),
     [
     Input('lengua-multiselector', 'value'),
     Input('family-multiselector', 'value'),
@@ -46,9 +48,13 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
         std = col_df['n_hablantes'].std() 
         bubble_size = abs(col_df['n_hablantes'] - mean ) / std
         bubble_max = 45
+        bubble_name = 'Z Norm'
+        z_switch_label = 'Z Normalization'
     elif z_switch == False:
         bubble_size = col_df['lengua_ratio']
+        bubble_name = 'Lengua Ratio'
         bubble_max = 25  
+        z_switch_label = 'Lengua Ratio'
     
     col_fig = px.scatter_geo(
                         col_df.dropna(), 
@@ -68,7 +74,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
                                     },
                         custom_data=[col_df["n_hablantes"], col_df['n_habitantes'], 
                             col_df['familia_linguistica'], col_df['nombre_lengua'],
-                            col_df['pct_hablantes'], col_df['pct_habitantes'], bubble_size
+                            col_df['pct_hablantes'], col_df['pct_habitantes'], bubble_size, col_df['lengua_ratio']
                             ],
                     )
     
@@ -92,11 +98,9 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
     col_fig.update_traces(
                     hovertemplate="<br>".join([
                         "<b> %{customdata[2]} Family</b> - %{customdata[3]}",
-                        "<b>Speakers:</b> %{customdata[0]:,}",
-                        "<b>%Speakers:</b> %{customdata[5]:.2}%", 
-                        "<b>Locals:</b> %{customdata[1]:,}",
-                        "<b>%Locals</b> %{customdata[4]:.2}%",
-                        "<b>Z Norm</b> %{customdata[6]:.2}"
+                        "<b>Speakers:</b> %{customdata[0]:,} (%Total %{customdata[5]:.2}%)", 
+                        "<b>Locals:</b> %{customdata[1]:,} (%Total %{customdata[4]:.2}%)",
+                        f"<b>{bubble_name}</b>: " + "%{customdata[6]:.2}"
                         ]),
                     marker_sizemin=4
     )
@@ -131,7 +135,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
     col_table['departamento'] = col_table['departamento'].str.capitalize()
     col_table.rename(columns={'departamento':'State', 'nombre_lengua':'Language', 'Vitalidad':'Status'},inplace=True)
     table_cols = [{'name':i.replace('_', ' ').capitalize(), 'id':i} for i in col_table.columns]
-    return col_fig, col_table.to_dict('records'), table_cols
+    return col_fig, col_table.to_dict('records'), table_cols, z_switch_label
 
 @app.callback(
     Output('bubble-legend', 'figure'),
@@ -273,3 +277,74 @@ def display_stats_page(hide_switch):
         return {'display':'block'}
     else:
         return {'display':'none'}
+
+'''
+   Here your callback functions
+'''
+
+# "Most Endangered Native Languages in Colombia (Linguistic Family)" Plot
+@app.callback(
+    Output(component_id='family-endangered-plot', component_property='figure'),
+    [
+    Input(component_id='stats-switch', component_property='checked')
+    ]
+)
+def update_endangered_plot(stats_switch):
+    ''' returns horizontal bar figure with most endangered languages in Colombia
+    '''
+    col_df = col_dataframe()
+    endangered_df = col_df[(col_df['vitalidad'] == 'Critically Endangered')][['familia_linguistica', 'nombre_lengua','n_hablantes','n_habitantes']].\
+        groupby(['nombre_lengua', 'familia_linguistica']).agg({'n_hablantes':'sum','n_habitantes':'sum'}).\
+        sort_values(by=['n_habitantes'], ascending=False).reset_index()
+    endangered_df = endangered_df.assign(endangered_ratio=1-(endangered_df.n_hablantes/endangered_df.n_habitantes))
+    endangered_df = endangered_df.sort_values(by=['endangered_ratio', 'n_hablantes', 'n_habitantes'], ascending=[False, True, True]).reset_index()
+    endangered_df = endangered_df.head(10)
+
+    subplots = make_subplots(
+        rows=len(endangered_df['endangered_ratio']),
+        cols=1,
+        subplot_titles=[x for x in endangered_df['nombre_lengua']],
+        shared_xaxes=True,
+        print_grid=False,
+        vertical_spacing=(0.45 / len(endangered_df['endangered_ratio'])),
+    )
+    subplots['layout'].update(
+        plot_bgcolor='#fff',
+    )
+    # add bars for the categories
+    for k,x in enumerate(endangered_df['nombre_lengua']):
+        subplots.add_trace(dict(
+            type='bar',
+            orientation='h',
+            y=[x],
+            x=[endangered_df['endangered_ratio'][k]],
+            text=["{:,.0f} speakers out of {:,.0f} locals".format(endangered_df["n_hablantes"][k],endangered_df['n_habitantes'][k])],
+            hoverinfo='text',
+            textposition='auto',
+            textfont_color='white',
+            marker=dict(color="#8daad6",),
+        ), k+1, 1)
+
+    # update the layout
+    subplots['layout'].update(
+        showlegend=False,
+    )
+    for x in subplots["layout"]['annotations']:
+        x['x'] = 0
+        x['xanchor'] = 'left'
+        x['align'] = 'left'
+        x['font'] = dict(size=14, )
+
+    # hide the axes
+    for axis in subplots['layout']:
+        if axis.startswith('yaxis') or axis.startswith('xaxis'):
+            subplots['layout'][axis]['visible'] = False
+
+    # update the margins and size
+    subplots['layout']['margin'] = {
+        'l': 0,
+        'r': 0,
+        't': 20,
+        'b': 1,
+    }
+    return subplots

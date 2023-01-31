@@ -20,14 +20,14 @@ def drawText():
                             ])
                         ),
                     ])
-def drawFigure(id_='fig-default', title_=None):
+def drawFigure(id_='fig-default', title_=None, style_=None):
     return  html.Div([
         dbc.Card([
             dbc.CardHeader(title_),
             dbc.CardBody([
                 dcc.Graph(id=id_) 
             ])
-        ]),  
+        ], style=style_),  
     ])
 
 def drawInfo(text='Some help text', id_='first-help'):
