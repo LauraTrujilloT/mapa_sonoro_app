@@ -1,4 +1,4 @@
-from dash import html, dcc, dash_table
+from dash import html, dcc
 import dash_bootstrap_components as dbc
 from components.col_components import *
 import dash_mantine_components as dmc

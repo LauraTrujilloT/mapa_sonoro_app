@@ -1,7 +1,8 @@
-from dash import html
+from dash import html, dcc
 import dash_mantine_components as dmc
 import dash_bootstrap_components as dbc
 from dash_iconify import DashIconify
+from pages.home.home_callbacks import make_col_map_home
 
 style = {
     "border": f"1px solid {dmc.theme.DEFAULT_COLORS['indigo'][4]}",
@@ -20,13 +21,20 @@ layout = html.Div([
                                     """This talk will introduce Data Analysts/Enthusiasts into Plotly Dash,
                                     and how to build awesome dashboards using Python without 
                                     free trial limits nor prior CSS/HTML knowledge.
+                                    """),
+                                dmc.Blockquote(
+                                    """ 
                                     Dash  is the original low-code framework for rapidly building data apps in Python, R, Julia, and F# (experimental).
                                     Written on top of Plotly.js and React.js, Dash is ideal for building and deploying data apps with customized user interfaces. It's particularly suited for anyone who works with data.
                                     Through a couple of simple patterns, Dash abstracts away all of the technologies and protocols that are required to build a full-stack web app with interactive data visualization.
-                                    Dash is simple enough that you can bind a user interface to your code in less than 10 minutes."""
+                                    Dash is simple enough that you can bind a user interface to your code in less than 10 minutes.
+                                    """,
+                                    cite='Plotly Dash Documentation',
                                 )
                             ],
                         ),
+                html.Br(),
+                dmc.Divider(variant='dotted'),
                 html.Br(),
                 dmc.Grid(
                     children=[
@@ -34,13 +42,16 @@ layout = html.Div([
                             html.Div(children=[
                                 dmc.Card(
                                         children=[
-                                            dmc.CardSection(
+                                            dmc.CardSection([
                                                 dmc.Image(
-                                                    #src="assets/img_natives_colombia.jpg",
-                                                    src="https://source.unsplash.com/bUlmNJqNO1o/",
-                                                    #height=160,
-                                                )
-                                            ),
+                                                    src="assets/img_natives_colombia.jpg",
+                                                    #src="https://source.unsplash.com/bUlmNJqNO1o/",
+                                                    height=200,
+                                                ),
+                                                dcc.Graph(
+                                                    figure=make_col_map_home(), 
+                                                    style={'height':800}),
+                                        ]),
                                             dmc.Group(
                                                 [
                                                     dmc.Text("Soundmap of Colombia", weight=500),
@@ -98,10 +109,46 @@ layout = html.Div([
                                         dmc.Text("""I'm Laura and I'm currently working as Data Analyst @ Factored. """, weight=250),
                                         html.Hr(),
                                         dmc.Text('About Factored', weight=500),
-                                        dmc.Text("Something super interesting", weight=250), 
+                                        dmc.Text(
+                                            """Factored was conceived in Palo Alto, California by Andrew Ng and 
+                                                a team of highly experienced AI researchers, educators, and engineers to help address 
+                                                the significant shortage of qualified AI 
+                                                and machine learning engineers globally. 
+                                                We know that exceptional technical aptitude, intelligence, 
+                                                communication skills and passion are equally distributed around the world, 
+                                                and we are committed to testing, vetting and nurturing 
+                                                the most talented engineers on behalf of our clients.""", 
+                                                weight=250), 
                                         html.Hr(),
                                         dmc.Text('About the Data', weight=500),
-                                        dmc.Text("Something super interesting", weight=250),
+                                        dmc.Text(
+                                            """The dataset contains information on the native languages 
+                                            of the indigenous people, palanqueros, creoles,
+                                            and gypsies who inhabit our territory and keep their language alive,
+                                            as a fundamental part of their own identity.
+                                            """, 
+                                            weight=250),
+                                        html.Br(),
+                                        dmc.List(
+                                                [
+                                                    dmc.ListItem(dmc.Text("Start Date: May 18, 2017", weight=250), ),
+                                                    dmc.ListItem(dmc.Text("Last Update: July 15, 2022", weight=250)),
+                                                    dmc.ListItem(dmc.Text("Update Frequency: Every 3 years", weight=250)),
+                                                    dmc.ListItem(dmc.Text("Geographical Coverage: National (Colombia)", weight=250)),
+                                                    dmc.ListItem(
+                                                        dmc.Text(
+                                                            [
+                                                                "Dataset collected by ",
+                                                                dmc.Anchor(
+                                                                    "Ministerio de Cultura de Colombia", href="https://www.datos.gov.co/Cultura/Mapa-Sonoro-Lenguas-Nativas-de-Colombia/734h-gxtn", 
+                                                                    underline=False,
+                                                                    target='_blank',
+                                                                ),
+                                                            ], weight=250
+                                                        )
+                                                    ),
+                                                ], style={'color':'gray'}
+                                            ),
                                         html.Hr(),
                                         dmc.Text('Useful Resources', weight=500),
                                         dmc.Navbar(
@@ -109,10 +156,11 @@ layout = html.Div([
                                                     width={"base": 300},
                                                     height=500,
                                                     children=[
-                                                        dmc.Anchor("Link1", href="/"),
-                                                        dmc.Anchor("Link2", href="/"),
-                                                        dmc.Anchor("Link3", href="/"),
-                                                        dmc.Anchor("Link4", href="/"),
+                                                        dmc.Anchor("The Book of Dash, A.Schroeder, C. Mayer, and A.M Ward ", href="https://nostarch.com/book-dash", target='_blank'),
+                                                        dmc.Anchor("YT Charming Data", href="https://www.youtube.com/@CharmingData/playlists",target='_blank'),
+                                                        dmc.Anchor("Clean Architecture for AI/ML Applications using Dash", href="https://towardsdatascience.com/clean-architecture-for-ai-ml-applications-using-dash-and-plotly-with-docker-42a3eeba6233", target='_blank'),
+                                                        dmc.Anchor("Interactive Python Dashboards with Plotly and Dash", href="https://www.udemy.com/course/interactive-python-dashboards-with-plotly-and-dash/", target='_blank'),
+                                                        dmc.Anchor("Dash Gallery", href='https://dash.gallery/Portal/', target='_blank')
                                                     ],
                                                 )
 
