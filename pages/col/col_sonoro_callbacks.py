@@ -75,7 +75,8 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
                                     },
                         custom_data=[col_df["n_hablantes"], col_df['n_habitantes'], 
                             col_df['familia_linguistica'], col_df['nombre_lengua'],
-                            col_df['pct_hablantes'], col_df['pct_habitantes'], bubble_size, col_df['lengua_ratio']
+                            col_df['pct_hablantes'], col_df['pct_habitantes'], bubble_size, col_df['lengua_ratio'],
+                            col_df['properties.NOMBRE_DPT']
                             ],
                     )
     
@@ -98,6 +99,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
 
     col_fig.update_traces(
                     hovertemplate="<br>".join([
+                        "<I> %{customdata[8]}</I>",
                         "<b> %{customdata[2]} Family</b> - %{customdata[3]}",
                         "<b>Speakers:</b> %{customdata[0]:,} (%Total %{customdata[5]:.2}%)", 
                         "<b>Locals:</b> %{customdata[1]:,} (%Total %{customdata[4]:.2}%)",
