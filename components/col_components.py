@@ -212,12 +212,12 @@ controls = dbc.Row([
                         dmc.MenuDropdown([
                             dmc.MenuItem(
                                         'Github Repository',
-                                        href="https://www.github.com/LauraTrujilloT",
+                                        href="https://github.com/LauraTrujilloT/mapa_sonoro_app",
                                         target="_blank",
                                         ),
                             dmc.MenuItem(
                                         'Download Data',
-                                        href="https://www.github.com/LauraTrujilloT",
+                                        href="https://www.datos.gov.co/Cultura/Mapa-Sonoro-Lenguas-Nativas-de-Colombia/734h-gxtn/explore/query/SELECT%0A%20%20%60nombre_de_lengua%60%2C%0A%20%20%60descripci_n_de_lengua%60%2C%0A%20%20%60departamento%60%2C%0A%20%20%60familia_ling_stica%60%2C%0A%20%20%60n_mero_de_habitantes%60%2C%0A%20%20%60n_mero_de_hablantes%60%2C%0A%20%20%60vitalidad%60/page/filter",
                                         target="_blank",
                                         ),
                             dmc.MenuItem(

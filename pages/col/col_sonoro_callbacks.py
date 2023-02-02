@@ -5,6 +5,7 @@ from plotly.subplots import make_subplots
 from app import app
 from pages.col.col_data import col_dataframe, col_geojson_dataframe
 import numpy as np
+import math
 
 @app.callback(
     Output('col-map-graph', 'figure'),
@@ -43,18 +44,18 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
     if not colormap:
         colormap = 'rgb(226,233, 244)'
     
-    if (len(col_df['nombre_lengua'].unique()) < 2) or (z_switch == True) :
-        mean = col_df['n_hablantes'].mean()
-        std = col_df['n_hablantes'].std() 
+    if (z_switch == True):  #(len(col_df['nombre_lengua'].unique()) < 2) or 
+        mean = col_df['n_hablantes'].mean() if  len(col_df['nombre_lengua'].unique()) > 2 else 0 
+        std = col_df['n_hablantes'].std() if len(col_df['nombre_lengua'].unique()) > 2 else 1
         bubble_size = abs(col_df['n_hablantes'] - mean ) / std
         bubble_max = 45
-        bubble_name = 'Z Norm'
-        z_switch_label = 'Z Normalization'
+        legend_title = 'Speakers'
+        z_switch_label = "Z Norm"
     elif z_switch == False:
         bubble_size = col_df['lengua_ratio']
-        bubble_name = 'Lengua Ratio'
         bubble_max = 25  
-        z_switch_label = 'Lengua Ratio'
+        legend_title = 'Speakers Ratio'
+        z_switch_label = "Speakers Ratio"
     
     col_fig = px.scatter_geo(
                         col_df.dropna(), 
@@ -100,7 +101,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
                         "<b> %{customdata[2]} Family</b> - %{customdata[3]}",
                         "<b>Speakers:</b> %{customdata[0]:,} (%Total %{customdata[5]:.2}%)", 
                         "<b>Locals:</b> %{customdata[1]:,} (%Total %{customdata[4]:.2}%)",
-                        f"<b>{bubble_name}</b>: " + "%{customdata[6]:.2}"
+                        f"<b>{legend_title}</b>: " + "%{customdata[6]:.2}"
                         ]),
                     marker_sizemin=4
     )
@@ -152,12 +153,14 @@ def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, z_swi
     '''
     Return Plotly figure for Bubble legend
     '''
+
     col_geojson_, deptos = col_geojson_dataframe()
     col_df = col_dataframe()
     speakers_total = col_df['n_hablantes'].sum()
     locals_total = col_df['n_habitantes'].sum()
     col_df['pct_hablantes'] = (col_df['n_hablantes'] * 100) / speakers_total
     col_df['pct_habitantes'] = (col_df['n_habitantes'] * 100) / locals_total
+
     if lengua:
         col_df = col_df[col_df['nombre_lengua'].isin(lengua)]
     if family:
@@ -169,25 +172,30 @@ def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, z_swi
         col_df = col_df[col_df['n_hablantes'] <= speakers_threshold]
     if not colormap:
         colormap = 'rgb(226,233, 244)'
-    
-    if (len(col_df['nombre_lengua'].unique()) < 2) or (z_switch == True) :
-        mean = col_df['n_hablantes'].mean()
-        std = col_df['n_hablantes'].std() 
+    if (z_switch == True):  #(len(col_df['nombre_lengua'].unique()) < 2) or 
+        mean = col_df['n_hablantes'].mean() if  len(col_df['nombre_lengua'].unique()) > 2 else 0 
+        std = col_df['n_hablantes'].std() if len(col_df['nombre_lengua'].unique()) > 2 else 1
         bubble_size = abs(col_df['n_hablantes'] - mean ) / std
         bubble_max = 45
         legend_title = 'Speakers'
+
     elif z_switch == False:
         bubble_size = col_df['lengua_ratio']
         bubble_max = 25  
         legend_title = 'Speakers Ratio'
 
     ## Bubble Legend Figure
-    
-    step = round(bubble_size.max() / 3, 1)
-    x_array = np.arange(bubble_size.min(), bubble_size.max(), step)
+    if bubble_size.max() == bubble_size.min():
+        min_bubble = 0
+    else:
+        min_bubble = bubble_size.min()
+
+    step = round(bubble_size.max() / 3, 1) if bubble_size.max() != bubble_size.min() else bubble_size.max()
+    x_array = np.arange(min_bubble, bubble_size.max() * 1.1, step)
     y_array = np.zeros(len(x_array))
+
     if z_switch:
-        text_array = [round((i*std) + mean, -3) for i in x_array]
+        text_array = [round((i*std) + mean, -3) if len(col_df['nombre_lengua'].unique()) > 2 else i for i in x_array]
     else:
         text_array = x_array
 
@@ -199,7 +207,7 @@ def make_bubble_legend(lengua,family, depto, speakers_threshold, colormap, z_swi
                             size_max=bubble_max,
                             color_discrete_sequence=['black'],
                             height=150,
-                            text=[f'{size_:.0%}' if not z_switch else f'{size_:.0f}'.strip("0") + 'K' for size_ in text_array]
+                            text=[f'{size_:.0%}' if not z_switch else f'{size_:,.1f}'.strip("0")  for size_ in text_array]
                         )
     bubble_fig.update_traces(
                             hovertemplate=None, 
