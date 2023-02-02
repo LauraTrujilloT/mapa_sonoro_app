@@ -30,7 +30,7 @@ layout = html.Div([
     dmc.Footer(
         height=60,
         fixed=True,
-        children=[dmc.Text("A nice footer")],
+        children=[dmc.Text("A nice footer"), dmc.Text('@lvtrujillot')],
         style={"backgroundColor": "#f8f9fa"},
     )
 ])

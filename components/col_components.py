@@ -221,6 +221,21 @@ controls = dbc.Row([
                                         target="_blank",
                                         ),
                             dmc.MenuItem(
+                                        'Plotly Documentation',
+                                        href="https://plotly.com/python/",
+                                        target="_blank",
+                                        ),
+                            dmc.MenuItem(
+                                        'Dash Documentation',
+                                        href="https://dash.plotly.com/",
+                                        target="_blank",
+                                        ),
+                            dmc.MenuItem(
+                                        'Dash Mantine Components',
+                                        href="https://www.dash-mantine-components.com/",
+                                        target="_blank",
+                                        ),
+                            dmc.MenuItem(
                                     'Help',
                                     href="https://www.github.com/LauraTrujilloT",
                                     target="_blank",
@@ -251,7 +266,7 @@ stats_components = dbc.Container([
                         dbc.CardBody([
                             dbc.Row([
                                 dbc.Col([
-                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Vertical Bar Chart)', style_={'border':'none'})
+                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Horizontal Bar Chart)', style_={'border':'none'})
                                 ], md=6),
                                 dbc.Col([
                                     drawFigure(id_='family-endangered-plot', title_='Most Endangered Native Languages in Colombia', style_={'border':'none'})

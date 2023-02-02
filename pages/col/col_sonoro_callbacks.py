@@ -306,7 +306,9 @@ def update_endangered_plot(stats_switch):
         sort_values(by=['n_habitantes'], ascending=False).reset_index()
     endangered_df = endangered_df.assign(endangered_ratio=1-(endangered_df.n_hablantes/endangered_df.n_habitantes))
     endangered_df = endangered_df.sort_values(by=['endangered_ratio', 'n_hablantes', 'n_habitantes'], ascending=[False, True, True]).reset_index()
-    endangered_df = endangered_df.head(10)
+    endangered_df = endangered_df.head(11)
+    endangered_df = endangered_df.assign(bar_color='rgba(158, 160, 170, 0.6)')
+    endangered_df['bar_color'][0:5] = '#8daad6'
 
     subplots = make_subplots(
         rows=len(endangered_df['endangered_ratio']),
@@ -330,7 +332,7 @@ def update_endangered_plot(stats_switch):
             hoverinfo='text',
             textposition='auto',
             textfont_color='white',
-            marker=dict(color="#8daad6",),
+            marker=dict(color=endangered_df['bar_color'][k],),
         ), k+1, 1)
 
     # update the layout
@@ -353,6 +355,7 @@ def update_endangered_plot(stats_switch):
         'l': 0,
         'r': 0,
         't': 20,
-        'b': 1,
+        'b': 5,
     }
+
     return subplots
