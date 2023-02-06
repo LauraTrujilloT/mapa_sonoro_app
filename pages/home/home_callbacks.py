@@ -22,7 +22,7 @@ def make_col_map_home():
                                 locations='properties.DPTO',
                                 featureidkey='properties.DPTO',
                                 mapbox_style="white-bg",
-                                zoom=5.2, 
+                                zoom=4, 
                                 center = {"lat": 4, "lon": -73.0421},
                                 opacity=.6,
                                 color_discrete_sequence=['black']#['#2781A5']

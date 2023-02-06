@@ -29,5 +29,3 @@ def col_geojson_dataframe():
     return col_geojson, deptos
 
 
-## anotaciones caro
-# departamentos -> how many states don't have native languages (la fuente de datos no traia info de tales deptos)

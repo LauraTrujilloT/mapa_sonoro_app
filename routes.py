@@ -2,9 +2,8 @@ import dash_bootstrap_components as dbc
 from dash import html
 from dash.dependencies import Input, Output
 from app import app
-from utils.constants import home_page_location, hyy_page_location, col_page_location
+from utils.constants import home_page_location,  col_page_location
 from pages.home import home
-from pages.hyy import hyy
 from pages.col import col_sonoro
 
 
@@ -15,8 +14,6 @@ from pages.col import col_sonoro
 def render_page_content(pathname):
     if pathname == home_page_location:
         return home.layout
-    #elif pathname == hyy_page_location:
-    #    return hyy.layout
     elif pathname == col_page_location:
         return col_sonoro.layout
     # If the user tries to reach a different page, return a 404 message

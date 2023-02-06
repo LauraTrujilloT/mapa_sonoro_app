@@ -50,7 +50,7 @@ layout = html.Div([
                                                 ),
                                                 dcc.Graph(
                                                     figure=make_col_map_home(), 
-                                                    style={'height':800}),
+                                                    style={'height':500}),
                                         ]),
                                             dmc.Group(
                                                 [
