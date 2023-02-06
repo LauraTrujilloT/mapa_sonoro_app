@@ -12,6 +12,7 @@ from pages.col import col_sonoro
     Output("page-content", "children"), 
     [Input("url", "pathname")])
 def render_page_content(pathname):
+    print("Check URL Pathname : ", pathname)
     if pathname == home_page_location:
         return home.layout
     elif pathname == col_page_location:
@@ -20,6 +21,6 @@ def render_page_content(pathname):
         [
             html.H1("404: Not found", className="text-danger"),
             html.Hr(),
-            html.P(f"The pathname {pathname} was not recognised..."),
+            html.P(f"Uh Oh, The pathname {pathname} was not recognised..."),
         ]
     )
