@@ -17,10 +17,12 @@ def render_page_content(pathname):
         return home.layout
     elif pathname == col_page_location:
         return col_sonoro.layout
-    return dbc.Jumbotron(
+    return html.Div(
+        dbc.Container(
         [
             html.H1("404: Not found", className="text-danger"),
             html.Hr(),
             html.P(f"Uh Oh, The pathname {pathname} was not recognised..."),
-        ]
+        ], fluid=True, className='py-3'
+        )
     )
