@@ -305,7 +305,7 @@ def display_stats_page(hide_switch):
 
 # "Most Endangered Native Languages in Colombia (Linguistic Family)" Plot
 @app.callback(
-    Output(component_id='family-endangered-plot', component_property='figure'),
+    Output(component_id='lang-endangered-plot', component_property='figure'),
     [
     Input(component_id='stats-switch', component_property='checked')
     ]
@@ -372,3 +372,27 @@ def update_endangered_plot(stats_switch):
     }
 
     return subplots
+
+# "Most Spoken Native Languages in Colombia (Linguistic Family)" Plot
+@app.callback(
+    Output(component_id='lang-spoken-plot', component_property='figure'),
+    [
+    Input(component_id='stats-switch', component_property='checked')
+    ]
+)
+def update_lang_spoken_plot(stats_switch):
+    ''' returns horizontal bar figure with most spoken languages in Colombia
+    '''
+    return None
+
+# "Diversity: Top 3 Deptos" Plot
+@app.callback(
+    Output(component_id='top-deptos-plot', component_property='figure'),
+    [
+    Input(component_id='stats-switch', component_property='checked')
+    ]
+)
+def update_diversity_deptos_plot(stats_switch):
+    ''' returns horizontal bar figure with most spoken languages in Colombia
+    '''
+    return None

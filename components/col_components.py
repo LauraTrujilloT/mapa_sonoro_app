@@ -266,10 +266,10 @@ stats_components = dbc.Container([
                         dbc.CardBody([
                             dbc.Row([
                                 dbc.Col([
-                                    drawFigure(id_='family-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Horizontal Bar Chart)', style_={'border':'none'})
+                                    drawFigure(id_='lang-spoken-barplot', title_='Most Spoken Native Languages in Colombia (Suggestion: Horizontal Bar Chart)', style_={'border':'none'})
                                 ], md=6),
                                 dbc.Col([
-                                    drawFigure(id_='family-endangered-plot', title_='Most Endangered Native Languages in Colombia', style_={'border':'none'})
+                                    drawFigure(id_='lang-endangered-plot', title_='Most Endangered Native Languages in Colombia', style_={'border':'none'})
                                 ], md=6)
                             ]),
                             html.Br(),
