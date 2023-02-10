@@ -39,8 +39,7 @@ sidebar = html.Div(
             [
                 html.Hr(),
                 html.P(
-                    "Non Static Sidebar for selecting a page "
-                    "links.",
+                    "Non Static Sidebar for selecting a page ",
                     className="lead",
                 ),
             ],
