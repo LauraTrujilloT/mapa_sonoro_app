@@ -237,7 +237,7 @@ controls = dbc.Row([
                                         ),
                             dmc.MenuItem(
                                     'Help',
-                                    href="https://www.github.com/LauraTrujilloT",
+                                    href="https://lauratrujillot.github.io/mapa_sonoro_book/intro.html",
                                     target="_blank",
                                     )
                         ])
