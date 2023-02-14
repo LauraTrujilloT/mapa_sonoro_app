@@ -136,7 +136,7 @@ def make_col_map(lengua,family, depto, speakers_threshold, colormap,  z_switch, 
     col_table = col_df[['departamento', 'nombre_lengua','vitalidad']].\
         sort_values(['departamento','nombre_lengua'], ascending=(True,True))
     col_table['departamento'] = col_table['departamento'].str.capitalize()
-    col_table.rename(columns={'departamento':'State', 'nombre_lengua':'Language', 'Vitalidad':'Status'},inplace=True)
+    col_table.rename(columns={'departamento':'State', 'nombre_lengua':'Language', 'vitalidad':'Vulnerability'},inplace=True)
     table_cols = [{'name':i.replace('_', ' ').capitalize(), 'id':i} for i in col_table.columns]
     return col_fig, col_table.to_dict('records'), table_cols, z_switch_label
 
